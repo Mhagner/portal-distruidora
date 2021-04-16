@@ -1,0 +1,257 @@
+:root {
+  --primary-color: #007cb8;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+/* HEADER */
+.mail-service,
+.phone-service,
+.top-social a {
+  color: #007cb8 !important;
+}
+
+.inner-header .advanced-search .input-group button {
+  background: #007cb8;
+  border-color: #007cb8;
+}
+
+.top-social a {
+  font-size: 18px !important;
+}
+
+.input-group {
+  max-width: 74% !important;
+}
+
+.inner-header {
+  padding: 16px 0;
+}
+
+.arrow-container {
+  border-radius: 50%;
+  border: 1px solid #4ba9db;
+  padding: 11px;
+  width: 48px;
+  height: 48px;
+  background: #b3dbf0;
+}
+
+.logo {
+  max-width: 160px;
+  max-height: 80px;
+}
+
+.advanced-search {
+  margin-top: 16px;
+}
+
+.inner-header .logo {
+  padding: 0;
+}
+
+.nav-item {
+  max-height: 54px;
+}
+
+.nav-item .nav-depart .depart-btn .depart-hover li a,
+.footer-widget ul li a,
+.nav-item .nav-menu li a {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .input-group {
+    max-width: 98% !important;
+  }
+
+  .slicknav_btn {
+    right: -10px;
+  }
+
+  .slicknav_menu {
+    margin-top: -19px !important;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* FIM HEADER */
+
+/* FOOTER */
+.logo-dig {
+  max-width: 117px;
+  max-height: 27px;
+  margin-left: 8px;
+}
+
+.payment-pic {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .payment-pic {
+    justify-content: center;
+  }
+}
+
+/* FIM FOOTER */
+
+/* CAROUSEL */
+.carousel {
+  max-width: 1280px;
+  margin: 16px auto;
+  border-radius: 8px;
+}
+
+.carousel-inner {
+  border-radius: 8px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(/img/svg/right-arrow.svg);
+}
+
+.carousel-control-prev-icon {
+  background-image: url(/img/svg/left-arrow.svg);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 7%;
+}
+
+.carousel-control-next {
+  right: -5px;
+}
+
+.carousel-control-prev {
+  left: -5px;
+}
+
+.carousel-indicators li {
+  background-color: #007cb8;
+  height: 6px;
+  border: 0.5px solid transparent;
+}
+
+.carousel-indicators .active {
+  border: 0.5px solid #007cb8;
+}
+
+@media (max-width: 769px) {
+  .carousel {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 15%;
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
+}
+
+/* FIMCAROUSEL */
+
+/* RÉGUA DE VANTAGENS */
+.benefit-items {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.single-benefit {
+  transition: all 0.5s;
+}
+
+.single-benefit:hover {
+  box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
+  -webkit-box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
+  -moz-box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
+}
+
+/* FIM RÉGUA DE VANTAGENS */
+
+/* SHELF */
+.shelf-products-home {
+  margin-bottom: 24px;
+}
+
+.shelf-products-home {
+  margin-top: 24px;
+}
+
+.item-class-home {
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+}
+
+.item-class-home:hover {
+  box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
+  -webkit-box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
+  -moz-box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(1% + 1px) !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(1% + 1px) !important;
+}
+
+.title-shelf span {
+  color: #e7ab3c;
+}
+
+/* SHELF */
+
+/* INFOCARD */
+.deal-of-week {
+  border-radius: 8px;
+  margin-bottom: 32px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/* INFOCARD */

@@ -1,0 +1,4 @@
+.mail-service,
+.phone-service {
+    color: var(--primay-color);
+}
