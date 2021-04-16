@@ -6,6 +6,7 @@ import { Shelf } from "../components/Shelf";
 import { carousel, benefits } from '../data'
 import { responsiveThreeColumns, responsiveFourColumns, responsiveFiveColumns } from '../config'
 import { Infocard } from "../components/Home/Infocard";
+import { SingleBanner } from "../components/Home/SingleBanner";
 
 export default function Home() {
   return (
@@ -32,12 +33,22 @@ export default function Home() {
       <Shelf
         responsive={responsiveFiveColumns}
         shelfTitle="Variedade de"
-        shelfTitleSpan="Interruptores"
+        shelfTitleSpan="interruptores"
         shelfClass="shelf-products-home"
         dotListClass="dot-shelf-home"
         itemClass="item-class-home"
         sliderClass="slider-home"
       />
+      <Shelf
+        responsive={responsiveFiveColumns}
+        shelfTitle="Mais"
+        shelfTitleSpan="comprados"
+        shelfClass="shelf-products-home"
+        dotListClass="dot-shelf-home"
+        itemClass="item-class-home"
+        sliderClass="slider-home"
+      />
+      <SingleBanner />
     </>
   )
 }

@@ -253,5 +253,13 @@ a {
   margin-right: 0;
 }
 
-
 /* INFOCARD */
+
+/* Banners */
+
+.single-banner > img {
+  max-height: 224px;
+  border-radius: 8px;
+}
+/* Banners */
+

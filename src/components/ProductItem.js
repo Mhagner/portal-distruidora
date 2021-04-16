@@ -1,10 +1,14 @@
-export function ProductItem({image}) {
+export function ProductItem({
+    image,
+    marca,
+    productDescription
+}) {
     return (
         <div className="product-item">
             <div className="pi-pic">
                 <img src={image} alt />
                 {/* <div className="sale">Sale</div> */}
-               {/*  <div className="icon">
+                {/*  <div className="icon">
                     <i className="icon_heart_alt" />
                 </div> */}
                 <ul>
@@ -13,16 +17,14 @@ export function ProductItem({image}) {
                     <li className="w-icon"><a href="#"><i className="fa fa-random" /></a></li>
                 </ul>
             </div>
-           {/*  <div className="pi-text">
-                <div className="catagory-name">Coat</div>
-                <a href="#">
-                    <h5>Pure Pineapple</h5>
-                </a>
-                <div className="product-price">
+            <div className="pi-text">
+                <div className="catagory-name">{marca}</div>
+                <p>{productDescription}</p>
+                {/* <div className="product-price">
                     $14.00
       <span>$35.00</span>
-                </div>
-            </div> */}
+                </div> */}
+            </div>
         </div>
 
     )

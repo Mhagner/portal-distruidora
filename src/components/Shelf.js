@@ -35,15 +35,39 @@ export function Shelf({
                 responsive={responsive}
                 showDots={false}
                 sliderClass={sliderClass}
-                slidesToSlide={2}
+                slidesToSlide={1}
                 swipeable
             >
-                <ProductItem image="img/home/interruptor-2.jpg" />
-                <ProductItem image="img/home/interruptor-5.jfif" />
-                <ProductItem image="img/home/interruptor-4.jpg" />
-                <ProductItem image="img/home/interruptor.jpg" />
-                <ProductItem image="img/home/interruptor-6.jpg" />
-                <ProductItem image="img/home/interruptor-7.jpg" />
+                <ProductItem
+                    marca="marca"
+                    productDescription="Descrição do produto"
+                    image="img/home/interruptor-2.jpg"
+                />
+                <ProductItem
+                    marca="marca"
+                    productDescription="Descrição do produto"
+                    image="img/home/interruptor-5.jfif"
+                />
+                <ProductItem
+                    marca="marca"
+                    productDescription="Descrição do produto"
+                    image="img/home/interruptor-4.jpg"
+                />
+                <ProductItem
+                    marca="marca"
+                    productDescription="Descrição do produto"
+                    image="img/home/interruptor.jpg"
+                />
+                <ProductItem
+                    marca="marca"
+                    productDescription="Descrição do produto"
+                    image="img/home/interruptor-6.jpg"
+                />
+                <ProductItem
+                    marca="marca"
+                    productDescription="Descrição do produto"
+                    image="img/home/interruptor-7.jpg"
+                />
 
             </Carousel>
         </div>
