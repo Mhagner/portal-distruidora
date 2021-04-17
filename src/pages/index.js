@@ -1,10 +1,8 @@
-import { Banner } from "../components/Banner";
-import { BannerSlide } from "../components/Home/BannerSlide";
 import { Benefits } from "../components/Home/Benefits";
 import { Slider } from "../components/Home/Slider";
 import { Shelf } from "../components/Shelf";
-import { carousel, benefits } from '../data'
-import { responsiveThreeColumns, responsiveFourColumns, responsiveFiveColumns } from '../config'
+import { carousel, benefits, banners, interruptores } from '../data'
+import { responsiveFiveColumns } from '../config'
 import { Infocard } from "../components/Home/Infocard";
 import { SingleBanner } from "../components/Home/SingleBanner";
 
@@ -21,6 +19,7 @@ export default function Home() {
         dotListClass="dot-shelf-home"
         itemClass="item-class-home"
         sliderClass="slider-home"
+        collection={interruptores}
       />
       <Infocard
         title="Variadades em leds"
@@ -38,6 +37,7 @@ export default function Home() {
         dotListClass="dot-shelf-home"
         itemClass="item-class-home"
         sliderClass="slider-home"
+        collection={interruptores}
       />
       <Shelf
         responsive={responsiveFiveColumns}
@@ -47,15 +47,11 @@ export default function Home() {
         dotListClass="dot-shelf-home"
         itemClass="item-class-home"
         sliderClass="slider-home"
+        collection={interruptores}
       />
-      <SingleBanner />
+      <SingleBanner
+        banners={banners}
+      />
     </>
   )
 }
-
-{/* <Banner
-  image="img/products/women-large.jpg"
-  title="Teste Banner"
-  description="Teste description"
-/>
- */}

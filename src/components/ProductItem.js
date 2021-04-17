@@ -1,10 +1,11 @@
 export function ProductItem({
     image,
     marca,
-    productDescription
+    productDescription,
+    key
 }) {
     return (
-        <div className="product-item">
+        <div key={key} className="product-item">
             <div className="pi-pic">
                 <img src={image} alt />
                 {/* <div className="sale">Sale</div> */}

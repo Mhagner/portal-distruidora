@@ -23,6 +23,22 @@ a {
   max-width: 1280px;
 }
 
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.error {
+  margin: 16px 0;
+  border-radius: 8px;
+  color: red;
+  font-weight: bold;
+  padding: 8px;
+  border: 2px solid red;
+  box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
+}
+
 /* HEADER */
 .mail-service,
 .phone-service,
@@ -204,9 +220,9 @@ a {
 }
 
 .single-benefit:hover {
-  box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
-  -webkit-box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
-  -moz-box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
+  box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
 }
 
 /* FIM RÉGUA DE VANTAGENS */
@@ -226,9 +242,9 @@ a {
 }
 
 .item-class-home:hover {
-  box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
-  -webkit-box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
-  -moz-box-shadow: -3px 5px 21px 4px rgba(0,0,0,0.09);
+  box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
 }
 
 .react-multiple-carousel__arrow--right {
@@ -261,5 +277,15 @@ a {
   max-height: 224px;
   border-radius: 8px;
 }
-/* Banners */
 
+.single-banner:hover {
+  box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
+}
+
+.single-banner .inner-text h4 {
+  border-radius: 16px 0 16px;
+}
+
+/* Banners */
