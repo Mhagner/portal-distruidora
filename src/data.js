@@ -68,12 +68,14 @@ export const interruptores = [
     {
         marca: "marca",
         productDescription: "Descrição do produto",
-        image: "img/home/interruptor-2.jpg"
+        image: "img/home/interruptor-2.jpg",
+        slug: "teste"
     },
     {
         marca: "marca",
         productDescription: "Descrição do produto",
-        image: "img/home/interruptor-5.jfif"
+        image: "img/home/interruptor-5.jfif",
+        slug: "teste1"
     },
     {
         marca: "marca",
@@ -94,5 +96,40 @@ export const interruptores = [
         marca: "marca",
         productDescription: "Descrição do produto",
         image: "img/home/interruptor-7.jpg"
+    }
+]
+
+export const logos = [
+    {
+        linkLogo: "img/logo-carousel/logo-1.png",
+        altLogo: "Logo 1"
+    },
+    {
+        linkLogo: "img/logo-carousel/logo-2.png",
+        altLogo: "Logo 2"
+    },
+    {
+        linkLogo: "img/logo-carousel/logo-3.png",
+        altLogo: "Logo 3"
+    },
+    {
+        linkLogo: "img/logo-carousel/logo-4.png",
+        altLogo: "Logo 4"
+    },
+    {
+        linkLogo: "img/logo-carousel/logo-5.png",
+        altLogo: "Logo 5"
+    },
+    {
+        linkLogo: "img/logo-carousel/logo-1.png",
+        altLogo: "Logo 6"
+    },
+    {
+        linkLogo: "img/logo-carousel/logo-2.png",
+        altLogo: "Logo 7"
+    },
+    {
+        linkLogo: "img/logo-carousel/logo-3.png",
+        altLogo: "Logo 8"
     }
 ]

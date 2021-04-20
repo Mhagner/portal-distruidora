@@ -1,8 +1,11 @@
+import Link from 'next/link'
+
 export function ProductItem({
     image,
     marca,
     productDescription,
-    key
+    key,
+    slug
 }) {
     return (
         <div key={key} className="product-item">
@@ -13,9 +16,15 @@ export function ProductItem({
                     <i className="icon_heart_alt" />
                 </div> */}
                 <ul>
-                    <li className="w-icon active"><a href="#"><i className="icon_bag_alt" /></a></li>
-                    <li className="quick-view"><a href="#">Cotação</a></li>
-                    <li className="w-icon"><a href="#"><i className="fa fa-random" /></a></li>
+                    <li className="w-icon active"><a href="#"><i className="icon_zoom-in_alt" /></a></li>
+                    <li className="quick-view">
+                        <Link href={{
+                            pathname: '/products/[slug]',
+                            query: { slug: slug }
+                        }} >
+                            <a>Ver detalhes</a>
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className="pi-text">

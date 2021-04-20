@@ -7,7 +7,6 @@ import { Preloader } from "./Preloader"
 export function Layout({ children }) {
     return (
         <>
-            <Preloader />
             <Header />
             {children}
             <Footer />

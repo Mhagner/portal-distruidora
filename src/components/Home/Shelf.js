@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { HandlerError } from './HandlerError';
-import { ProductItem } from './ProductItem';
+import { HandlerError } from '../HandlerError';
+import { ProductItem } from '../ProductItem';
 
 export function Shelf({
     collection,
@@ -29,13 +29,13 @@ export function Shelf({
                     containerClass="container-with-dots"
                     dotListClass={dotListClass}
                     draggable
-                    focusOnSelect={false}
+                    focusOnSelect={true}
                     infinite
                     itemClass={itemClass}
                     keyBoardControl
                     minimumTouchDrag={60}
                     renderButtonGroupOutside={false}
-                    renderDotsOutside={false}
+                    renderDotsOutside={true}
                     responsive={responsive}
                     showDots={false}
                     sliderClass={sliderClass}

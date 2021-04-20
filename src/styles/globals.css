@@ -259,6 +259,58 @@ a {
   color: #e7ab3c;
 }
 
+.title-page span {
+  color: #007cb8;
+}
+
+.institucional {
+  text-align: justify;
+  margin: 16px 0;
+  padding: 16px;
+}
+
+.institucional p {
+  font-size: 20px;
+}
+
+.institucional span {
+  font-weight: bold;
+  color: #007cb8;
+}
+
+.image-portal {
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.image-portal img {
+  border-radius: 8px;
+  transition: all 0.5s;
+  border: 8px solid #007cb8;
+  padding: 8px;
+}
+
+.institucional .footer-social a {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background: #007cb8;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 7px;
+  position: relative;
+  z-index: 1;
+  margin-top: 32px;
+  font-size: 32px;
+  padding: 8px;
+}
+
+.institucional .footer-social a:hover {
+  background-color: #01699c;
+}
+
 /* SHELF */
 
 /* INFOCARD */
@@ -289,3 +341,15 @@ a {
 }
 
 /* Banners */
+
+.partner-logo {
+  padding: 38px 50px;
+}
+
+.slider-logo {
+  background-color: #303030;
+}
+
+.breadcrumb-text span {
+  color: #007cb8;
+}

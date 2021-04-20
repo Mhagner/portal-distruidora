@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export function FooterWidget({ title, items }) {
     return (
         <div className="footer-widget">
@@ -5,7 +7,7 @@ export function FooterWidget({ title, items }) {
             <ul>
                 {items.map((item, index) => (
                     <li key={index}>
-                        <a href="#">{item.description}</a>
+                        <Link href={item.url}>{item.description}</Link>
                     </li>
                 ))}
             </ul>
