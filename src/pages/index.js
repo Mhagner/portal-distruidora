@@ -10,7 +10,7 @@ import { ShelfLogos } from "../components/Home/SelfLogos";
 export default function Home() {
   return (
     <>
-      <Slider items={carousel} timeInterval="0" />
+      <Slider items={carousel} timeInterval="3000" />
       <Benefits benefits={benefits} />
       <Shelf
         responsive={responsiveFiveColumns}
@@ -22,13 +22,16 @@ export default function Home() {
         sliderClass="slider-home"
         collection={interruptores}
       />
-      <Infocard
+      {/* <Infocard
         title="Variadades em leds"
         description="Não perca esses descontos especiais da semana"
         textPrice="A partir de "
         price="99,90"
         textButton="Veja agora!"
         backgroundImage="img/time-bg.jpg"
+      /> */}
+        <SingleBanner
+        banners={banners}
       />
       <Shelf
         responsive={responsiveFiveColumns}
@@ -50,9 +53,7 @@ export default function Home() {
         sliderClass="slider-home"
         collection={interruptores}
       />
-      <SingleBanner
-        banners={banners}
-      />
+    
       <ShelfLogos 
         responsive={responsiveFiveColumns}
         sliderClassLogo="slider-logo"

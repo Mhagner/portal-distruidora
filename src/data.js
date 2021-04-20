@@ -39,28 +39,40 @@ export const benefits = [
 
 export const banners = [
     {
-        image: "img/svg/banner-2.jpg",
-        title: "Iluminnação"
+        image: "img/svg/iluminacao-comercial.png",
+        title: "Iluminação comercial"
     },
     {
         image: "img/svg/interruptores.jpg",
-        title: "Interruptores"
+        title: "Tomadas e interruptores"
     },
     {
         image: "img/svg/cabos.jpg",
-        title: "Cabos"
+        title: "Fios e cabos"
     },
     {
-        image: "img/svg/leds.jpg",
-        title: "Leds"
+        image: "img/svg/djuntores.png",
+        title: "Disjuntores"
     },
     {
-        image: "img/svg/interruptores.jpg",
-        title: "Interruptores"
+        image: "img/svg/distribuicao.jpg",
+        title: "Distribuição"
     },
     {
-        image: "img/svg/cabos.jpg",
-        title: "Cabos"
+        image: "img/svg/ilumincao-decorativa.jpg",
+        title: "Iluminação decorativa"
+    },
+    {
+        image: "img/svg/eletrodutos.jfif",
+        title: "Eletrodutos e mangueiras"
+    },
+    {
+        image: "img/svg/soquetes.jpg",
+        title: "Soquetes e adaptadores"
+    },
+    {
+        image: "img/svg/ferramentas.jpg",
+        title: "Acessórios e Ferramentas"
     }
 ]
 

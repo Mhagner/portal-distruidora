@@ -330,10 +330,16 @@ a {
   border-radius: 8px;
 }
 
+.single-banner {
+  filter: brightness(70%);
+  transition: all 0.5s;
+}
+
 .single-banner:hover {
   box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
   -webkit-box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: -3px 5px 21px 4px rgba(0, 0, 0, 0.09);
+  filter: brightness(100%);
 }
 
 .single-banner .inner-text h4 {
