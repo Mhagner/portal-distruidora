@@ -334,6 +334,7 @@ a {
   transition: all 0.5s;
   padding: 8px;
   border-radius: 8px;
+  border: 1px solid #f2f2f2;
 }
 
 .product-item:hover {
@@ -354,6 +355,7 @@ a {
 .single-banner {
   filter: brightness(70%);
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .single-banner:hover {

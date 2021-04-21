@@ -30,7 +30,7 @@ export default function Home() {
         textButton="Veja agora!"
         backgroundImage="img/time-bg.jpg"
       /> */}
-        <SingleBanner
+      <SingleBanner
         banners={banners}
       />
       <Shelf
@@ -53,8 +53,8 @@ export default function Home() {
         sliderClass="slider-home"
         collection={interruptores}
       />
-    
-      <ShelfLogos 
+
+      <ShelfLogos
         responsive={responsiveFiveColumns}
         sliderClassLogo="slider-logo"
         shelfClassLogo="shelf-logo-class"

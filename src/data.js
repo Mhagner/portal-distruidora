@@ -40,39 +40,48 @@ export const benefits = [
 export const banners = [
     {
         image: "img/svg/iluminacao-comercial.png",
-        title: "Iluminação comercial"
+        title: "Iluminação comercial",
+        link: "/iluminacao"
     },
     {
         image: "img/svg/interruptores.jpg",
-        title: "Tomadas e interruptores"
+        title: "Tomadas e interruptores",
+        link: "/tomadas-e-interruptores"
     },
     {
         image: "img/svg/cabos.jpg",
-        title: "Fios e cabos"
+        title: "Fios e cabos",
+        link: "/cabos-e-fios"
     },
     {
         image: "img/svg/djuntores.png",
-        title: "Disjuntores"
+        title: "Disjuntores",
+        link: ""
     },
     {
         image: "img/svg/distribuicao.jpg",
-        title: "Distribuição"
+        title: "Distribuição",
+        link: ""
     },
     {
         image: "img/svg/ilumincao-decorativa.jpg",
-        title: "Iluminação decorativa"
+        title: "Iluminação decorativa",
+        link: ""
     },
     {
         image: "img/svg/eletrodutos.jfif",
-        title: "Eletrodutos e mangueiras"
+        title: "Eletrodutos e mangueiras",
+        link: ""
     },
     {
         image: "img/svg/soquetes.jpg",
-        title: "Soquetes e adaptadores"
+        title: "Soquetes e adaptadores",
+        link: ""
     },
     {
         image: "img/svg/ferramentas.jpg",
-        title: "Acessórios e Ferramentas"
+        title: "Acessórios e Ferramentas",
+        link: "/ferramentas"
     }
 ]
 
@@ -154,6 +163,14 @@ export const mainCategories = [
     {
         description: "Iluminação",
         link: "/iluminacao"
+    },
+    {
+        description: "Ferramentas",
+        link: "/ferramentas"
+    },
+    {
+        description: "Tomadas e interruptores",
+        link: "/tomadas-e-interruptores"
     }
 ]
 
@@ -165,5 +182,93 @@ export const allCategories = [
     {
         description: "Iluminação",
         link: "/iluminacao"
+    },
+    {
+        description: "Ferramentas",
+        link: "/ferramentas"
+    },
+    {
+        description: "Tomadas e interruptores",
+        link: "/tomadas-e-interruptores"
     }
+]
+
+export const categories = [
+    {
+        id: 1,
+        slug: "iluminacao",
+        categoryName: "Iluminação",
+        products: [
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/home/interruptor-2.jpg",
+                slug: "teste"
+            },
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/home/interruptor-5.jfif",
+                slug: "teste1"
+            }
+        ]
+    },
+    {
+        id: 2,
+        slug: "cabos-e-fios",
+        categoryName: "Cabos e fios",
+        products: [
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/products/man-1.jpg",
+                slug: "teste"
+            },
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/products/man-2.jpg",
+                slug: "teste1"
+            },
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/products/man-3.jpg",
+                slug: "teste1"
+            }
+        ]
+    },
+    {
+        id: 3,
+        slug: "ferramentas",
+        categoryName: "Ferramentas",
+        products: [
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/products/man-4.jpg",
+                slug: "teste"
+            }
+        ]
+    },
+    {
+        id: 4,
+        slug: "tomadas-e-interruptores",
+        categoryName: "Tomadas e interruptores",
+        products: [
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/products/man-3.jpg",
+                slug: "teste"
+            },
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/products/man-2.jpg",
+                slug: "teste"
+            }
+        ]
+    }
+
 ]

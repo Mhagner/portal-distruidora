@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import { mainCategories, allCategories } from '../../data'
 
-console.log(mainCategories)
-console.log(allCategories)
-
 export function NavBar() {
     return (
         <div className="nav-item">
