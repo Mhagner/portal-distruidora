@@ -145,3 +145,25 @@ export const logos = [
         altLogo: "Logo 8"
     }
 ]
+
+export const mainCategories = [
+    {
+        description: "Cabos",
+        link: "/cabos-e-fios"
+    },
+    {
+        description: "Iluminação",
+        link: "/iluminacao"
+    }
+]
+
+export const allCategories = [
+    {
+        description: "Cabos",
+        link: "/cabos-e-fios"
+    },
+    {
+        description: "Iluminação",
+        link: "/iluminacao"
+    }
+]
