@@ -311,6 +311,10 @@ a {
   background-color: #01699c;
 }
 
+.product-list .product-item {
+  margin-right: 16px;
+}
+
 /* SHELF */
 
 /* INFOCARD */

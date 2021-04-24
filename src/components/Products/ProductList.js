@@ -1,6 +1,6 @@
 import { ProductItem } from '../ProductItem'
 
-export function ProductList({ products }) {
+export function ProductList({ products, urlApi }) {
     return (
         <>
             <div class="product-show-option">
@@ -16,23 +16,27 @@ export function ProductList({ products }) {
                         </div>
                     </div>
                     <div className="col-lg-5 col-md-5 text-right">
-                        <p>{products.length} produtos listados</p>
+                        <p>{(products.length > 1)?
+                        `${products.length} produstos listados`:
+                        `${products.length} produto listado`}</p>
                     </div>
                 </div>
 
             </div>
             <div className="product-list">
                 <div className="row">
-                    {products.map((product) => (
-                        <div className="col-lg-3 col-sm-6">
+                    {products.map((product) => {
+                        let url = product.image[0].url
+
+                        return (
                             <ProductItem
-                                key={product.id}
-                                marca={product.marca}
+                                key={product.id} 
+                                image={`${urlApi}${url}`}
                                 productDescription={product.productDescription}
-                                image={product.image}
+                                marca={product.marca}
                             />
-                        </div>
-                    ))}
+                        )
+                    })}
                 </div>
             </div>
         </>

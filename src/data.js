@@ -56,7 +56,7 @@ export const banners = [
     {
         image: "img/svg/djuntores.png",
         title: "Disjuntores",
-        link: ""
+        link: "/disjuntores"
     },
     {
         image: "img/svg/distribuicao.jpg",
@@ -155,25 +155,6 @@ export const logos = [
     }
 ]
 
-export const mainCategories = [
-    {
-        description: "Cabos",
-        link: "/cabos-e-fios"
-    },
-    {
-        description: "Iluminação",
-        link: "/iluminacao"
-    },
-    {
-        description: "Ferramentas",
-        link: "/ferramentas"
-    },
-    {
-        description: "Tomadas e interruptores",
-        link: "/tomadas-e-interruptores"
-    }
-]
-
 export const allCategories = [
     {
         description: "Cabos",
@@ -190,12 +171,44 @@ export const allCategories = [
     {
         description: "Tomadas e interruptores",
         link: "/tomadas-e-interruptores"
+    },
+    {
+        description: "Disjuntores",
+        link: "/disjuntores"
+    },
+    {
+        description: "Mangueiras",
+        link: "/mangueiras"
+    }
+    
+]
+
+export const mainCategories = [
+    {
+        description: "Cabos",
+        link: "/cabos-e-fios"
+    },
+    {
+        description: "Iluminação",
+        link: "/iluminacao"
+    },
+    {
+        description: "Ferramentas",
+        link: "/ferramentas"
+    },
+    {
+        description: "Tomadas e interruptores",
+        link: "/tomadas-e-interruptores"
+    },
+    {
+        description: "Disjuntores",
+        link: "/disjuntores"
     }
 ]
 
 export const categories = [
     {
-        id: 1,
+        id: "1",
         slug: "iluminacao",
         categoryName: "Iluminação",
         products: [
@@ -214,7 +227,7 @@ export const categories = [
         ]
     },
     {
-        id: 2,
+        id: "2",
         slug: "cabos-e-fios",
         categoryName: "Cabos e fios",
         products: [
@@ -256,6 +269,50 @@ export const categories = [
         slug: "tomadas-e-interruptores",
         categoryName: "Tomadas e interruptores",
         products: [
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/products/man-3.jpg",
+                slug: "teste"
+            },
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/products/man-2.jpg",
+                slug: "teste"
+            }
+        ]
+    },
+    {
+        id: 5,
+        slug: "disjuntores",
+        categoryName: "Disjuntores",
+        products: [
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/products/man-3.jpg",
+                slug: "teste"
+            },
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/products/man-2.jpg",
+                slug: "teste"
+            }
+        ]
+    },
+    {
+        id: 6,
+        slug: "mangueiras",
+        categoryName: "Mangueiras",
+        products: [
+            {
+                marca: "marca",
+                productDescription: "Descrição do produto",
+                image: "img/products/man-1.jpg",
+                slug: "teste"
+            },
             {
                 marca: "marca",
                 productDescription: "Descrição do produto",
