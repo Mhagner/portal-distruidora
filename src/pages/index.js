@@ -5,10 +5,12 @@ import { carousel, benefits, banners, interruptores, logos } from '../data'
 import { responsiveFiveColumns } from '../config'
 import { SingleBanner } from "../components/Home/SingleBanner";
 import { ShelfLogos } from "../components/Home/SelfLogos";
+import { ProcessTopBar } from "../components/ProcessTopBar"
 
 export default function Home() {
   return (
     <>
+      <ProcessTopBar />
       <Slider items={carousel} timeInterval="3000" />
       <Benefits benefits={benefits} />
       <Shelf

@@ -17,8 +17,8 @@ export function ProductList({ products, urlApi }) {
                     </div>
                     <div className="col-lg-5 col-md-5 text-right">
                         <p>{(products.length > 1)?
-                        `${products.length} produstos listados`:
-                        `${products.length} produto listado`}</p>
+                        `${products.length} produtos cadastrados`:
+                        `${products.length} produto cadastrado`}</p>
                     </div>
                 </div>
 

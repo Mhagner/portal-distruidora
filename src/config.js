@@ -78,3 +78,5 @@ export const responsiveThreeColumns = {
         partialVisibilityGutter: 30
     }
 }
+
+export const urlApi = 'https://portal-api-strapi.herokuapp.com'

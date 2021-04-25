@@ -3,14 +3,15 @@ import { ProductList } from '../components/Products/ProductList'
 import { Breadcrumb } from '../components/Breadcrumb'
 import client from '../apolo-client'
 import { GET_GATEGORIES, GET_GATEGORIES_SLUG } from '../graphql/queries/categories'
-
-const urlApi = 'http://localhost:1337'
+import { urlApi } from '../config'
+import { ProcessTopBar } from "../components/ProcessTopBar"
 
 export default function Categories({ category }) {
     const { categoryName, products } = category
 
     return (
         <>
+            <ProcessTopBar />
             <Breadcrumb pageName={categoryName} />
             <div className="container pl-4 pr-4">
                 <ProductList urlApi={urlApi} products={products} />
