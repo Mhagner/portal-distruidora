@@ -66,7 +66,8 @@ export async function getStaticProps({ params }) {
         return {
             props: {
                 category
-            }
+            },
+            revalidate: 1
         }
     } catch (error) {
         const msg = JSON.stringify(error)
