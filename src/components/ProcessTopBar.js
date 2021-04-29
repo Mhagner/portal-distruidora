@@ -13,7 +13,7 @@ export function ProcessTopBar() {
         setTimeout(() => {
             console.log("...loading something");
             ref.current.complete();
-        }, 1000);
+        }, 100);
     };
 
     return (

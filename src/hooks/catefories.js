@@ -1,9 +1,6 @@
-/* import { categories } from '../data' */
+import { categories } from '../data'
 
-/* import useCategories from '../hooks/useCategories'
-const { categories } = useCategories() */
-
-export function getAllCategoriesSlug(categories) {
+export function getAllCategoriesSlug() {
     const data = categories.map(category => {
         return {
             params: {
@@ -15,7 +12,7 @@ export function getAllCategoriesSlug(categories) {
     return data
 }
 
-export function getCategoryBySlug(slug, categories) {
+export function getCategoryBySlug(slug) {
     const data = categories.find(category =>
         (category.slug === slug) ? category : null
     )

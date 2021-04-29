@@ -1,6 +1,6 @@
 import { ProductItem } from '../ProductItem'
 
-export function ProductList({ products, urlApi }) {
+export function ProductList({ products }) {
     return (
         <>
             <div class="product-show-option">
@@ -26,12 +26,10 @@ export function ProductList({ products, urlApi }) {
             <div className="product-list">
                 <div className="row">
                     {products.map((product) => {
-                        let url = product.image[0].url
-
                         return (
                             <ProductItem
                                 key={product.id} 
-                                image={`${urlApi}${url}`}
+                                image={product.image}
                                 productDescription={product.productDescription}
                                 marca={product.marca}
                             />

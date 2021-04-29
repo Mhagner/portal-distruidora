@@ -1,10 +1,10 @@
 export const carousel = [
     {
-        image: "img/hero-1.jpg",
+        image: "img/slides/slide-1.png",
         active: true,
         alt: "hero 1"
-    },
-    {
+    }
+   /*  {
         image: "img/hero-2.jpg",
         active: false,
         alt: "hero 2"
@@ -13,7 +13,7 @@ export const carousel = [
         image: "img/hero-3.jpg",
         active: false,
         alt: "hero 3"
-    }
+    } */
 ]
 
 export const benefits = [
@@ -210,122 +210,90 @@ export const categories = [
     {
         id: "1",
         slug: "iluminacao",
-        categoryName: "Iluminação",
-        products: [
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/home/interruptor-2.jpg",
-                slug: "teste"
-            },
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/home/interruptor-5.jfif",
-                slug: "teste1"
-            }
-        ]
+        categoryName: "Iluminação"
     },
     {
         id: "2",
         slug: "cabos-e-fios",
-        categoryName: "Cabos e fios",
-        products: [
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/products/man-1.jpg",
-                slug: "teste"
-            },
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/products/man-2.jpg",
-                slug: "teste1"
-            },
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/products/man-3.jpg",
-                slug: "teste1"
-            }
-        ]
+        categoryName: "Cabos e fios"
     },
     {
-        id: 3,
+        id: "3",
         slug: "ferramentas",
-        categoryName: "Ferramentas",
-        products: [
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/products/man-4.jpg",
-                slug: "teste"
-            }
-        ]
+        categoryName: "Ferramentas"
     },
     {
-        id: 4,
+        id: "4",
         slug: "tomadas-e-interruptores",
-        categoryName: "Tomadas e interruptores",
-        products: [
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/products/man-3.jpg",
-                slug: "teste"
-            },
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/products/man-2.jpg",
-                slug: "teste"
-            }
-        ]
+        categoryName: "Tomadas e interruptores"
     },
     {
-        id: 5,
+        id: "5",
         slug: "disjuntores",
-        categoryName: "Disjuntores",
-        products: [
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/products/man-3.jpg",
-                slug: "teste"
-            },
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/products/man-2.jpg",
-                slug: "teste"
-            }
-        ]
+        categoryName: "Disjuntores"
     },
     {
-        id: 6,
+        id: "6",
         slug: "mangueiras",
-        categoryName: "Mangueiras",
-        products: [
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/products/man-1.jpg",
-                slug: "teste"
-            },
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/products/man-3.jpg",
-                slug: "teste"
-            },
-            {
-                marca: "marca",
-                productDescription: "Descrição do produto",
-                image: "img/products/man-2.jpg",
-                slug: "teste"
-            }
-        ]
+        categoryName: "Mangueiras"
     }
 
+]
+
+export const menu = [
+    {
+        description: "Home",
+        link: "/"
+    },
+    {
+        description: "Quem somos",
+        link: "/about"
+    },
+    {
+        description: "Orçamento",
+        link: "/budget"
+    }
+]
+
+export const categoryIcons = [
+    {
+        image: "/img/svg/icons/disjuntor.svg",
+        text: "Disjuntores",
+        link: "/disjuntores"
+    },
+    {
+        image: "/img/svg/icons/ferramentas.svg",
+        text: "Ferramentas",
+        link: "/disjuntores"
+    },
+    {
+        image: "/img/svg/icons/fios.svg",
+        text: "Fios e cabos",
+        link: "/disjuntores"
+    },
+    {
+        image: "/img/svg/icons/iluminacao-decorativa.svg",
+        text: "Iluminação",
+        link: "/disjuntores"
+    },
+    {
+        image: "/img/svg/icons/interruptor.svg",
+        text: "Interruptores",
+        link: "/disjuntores"
+    },
+    {
+        image: "/img/svg/icons/mangueira.svg",
+        text: "Mangueiras",
+        link: "/disjuntores"
+    },
+    {
+        image: "/img/svg/icons/soquete.svg",
+        text: "Soquetes",
+        link: "/disjuntores"
+    },
+    {
+        image: "/img/svg/icons/tomada.svg",
+        text: "Tomadas",
+        link: "/disjuntores"
+    },
 ]

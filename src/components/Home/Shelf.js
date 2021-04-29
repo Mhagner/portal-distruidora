@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { HandlerError } from '../HandlerError';
-import { ProductItem } from '../ProductItem';
+import { Category } from './Category';
 
 export function Shelf({
     collection,
@@ -42,13 +42,13 @@ export function Shelf({
                     slidesToSlide={1}
                     swipeable
                 >
-                    {collection.map((product, index) => (
-                        <ProductItem
+                    {collection.map((item, index) => (
+                        <Category 
                             key={index}
-                            marca={product.marca}
-                            productDescription={product.productoDescription}
-                            image={product.image}
-                        />
+                            image={item.image}
+                            text={item.text}
+                            link={item.link}
+                        /> 
                     ))}
                 </Carousel>
             ) : (

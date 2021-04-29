@@ -1,28 +1,15 @@
-import { useQuery } from "@apollo/client";
-import { GET_GATEGORIES_SLUG } from '../../graphql/queries/categories'
 import Link from 'next/link'
+import { categories } from '../../data'
 
  export function MenuAllCategories() {
-    const { data, loading, error } = useQuery(GET_GATEGORIES_SLUG)
-
-    if (loading) {
-        return <h2>Loading...</h2>;
-    }
-
-    if (error) {
-        console.error(error);
-        return null;
-    }
-
-    const allCategories = data.categories
 
     return (
         <div className="nav-depart">
             <div className="depart-btn">
                 <i className="ti-menu" />
-                <span>Todas as categorias</span>
+                <span>Nossas categorias</span>
                 <ul className="depart-hover">
-                    {allCategories.map((category) => (
+                    {categories.map((category) => (
                         <li key={category.id}>
                             <Link href={category.slug}>
                                 <a>{category.categoryName}</a>

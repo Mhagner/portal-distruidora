@@ -1,76 +1,39 @@
 import { getCategoryBySlug, getAllCategoriesSlug } from '../hooks/catefories'
-import { ProductList } from '../components/Products/ProductList'
+/* import { ProductList } from '../components/Products/ProductList' */
 import { Breadcrumb } from '../components/Breadcrumb'
-import client from '../apolo-client'
-import { GET_GATEGORIES, GET_GATEGORIES_SLUG } from '../graphql/queries/categories'
-import { urlApi } from '../config'
 import { ProcessTopBar } from "../components/ProcessTopBar"
 
 export default function Categories({ category }) {
-    const { categoryName, products } = category
+    const { categoryName } = category
 
     return (
         <>
             <ProcessTopBar />
             <Breadcrumb pageName={categoryName} />
-            <div className="container pl-4 pr-4">
-                <ProductList urlApi={urlApi} products={products} />
-            </div>
+           {/*  <div className="container pl-4 pr-4">
+                <ProductList products={products} />
+            </div> */}
         </>
     )
 }
 
 
 export async function getStaticPaths() {
-    try {
-        const { data } = await client.query({
-            query: GET_GATEGORIES_SLUG
-        })
+    const paths = getAllCategoriesSlug()
 
-        const categories = data.categories
-
-        let paths
-        if (categories) {
-            paths = getAllCategoriesSlug(categories)
-        } else {
-            const msg = "Não foi possível listar as categorias"
-            paths = JSON.stringify(msg)
-        }
-
-        return {
-            paths,
-            fallback: false
-        }
-    } catch (error) {
-        const msg = JSON.stringify(error)
-        return { props: { msg } }
+    return {
+        paths,
+        fallback: false
     }
 }
 
 export async function getStaticProps({ params }) {
-    try {
-        const { data } = await client.query({
-            query: GET_GATEGORIES
-        })
+    const category = getCategoryBySlug(params.slug)
 
-        const categories = data.categories
-
-        let category
-        if (categories) {
-            category = getCategoryBySlug(params.slug, categories)
-        } else {
-            const msg = "Não existem produtos cadastrados para essa categoria"
-            category = JSON.stringify(msg)
-        }
-
-        return {
-            props: {
-                category
-            },
-            revalidate: 1
-        }
-    } catch (error) {
-        const msg = JSON.stringify(error)
-        return { props: { msg } }
+    return {
+        props: {
+            category
+        },
+        revalidate: 5
     }
 }
