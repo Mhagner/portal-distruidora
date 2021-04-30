@@ -279,6 +279,8 @@ a {
 .image-portal {
   margin-top: 16px;
   padding: 16px;
+  border: 8px solid #007cb8;
+  border-radius: 8px;
 }
 
 .image-portal img {
