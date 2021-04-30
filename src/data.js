@@ -250,7 +250,7 @@ export const menu = [
         link: "/about"
     },
     {
-        description: "Orçamento",
+        description: "Orçamentos",
         link: "/budget"
     }
 ]
@@ -264,36 +264,36 @@ export const categoryIcons = [
     {
         image: "/img/svg/icons/ferramentas.svg",
         text: "Ferramentas",
-        link: "/disjuntores"
+        link: "/ferramentas"
     },
     {
         image: "/img/svg/icons/fios.svg",
         text: "Fios e cabos",
-        link: "/disjuntores"
+        link: "/fios-e-cabos"
     },
     {
         image: "/img/svg/icons/iluminacao-decorativa.svg",
         text: "Iluminação",
-        link: "/disjuntores"
+        link: "/iluminacao"
     },
     {
         image: "/img/svg/icons/interruptor.svg",
         text: "Interruptores",
-        link: "/disjuntores"
+        link: "/interruptores"
     },
     {
         image: "/img/svg/icons/mangueira.svg",
         text: "Mangueiras",
-        link: "/disjuntores"
+        link: "/mangueiras"
     },
     {
         image: "/img/svg/icons/soquete.svg",
         text: "Soquetes",
-        link: "/disjuntores"
+        link: "/soquetes"
     },
     {
         image: "/img/svg/icons/tomada.svg",
         text: "Tomadas",
-        link: "/disjuntores"
+        link: "/tomadas"
     },
 ]

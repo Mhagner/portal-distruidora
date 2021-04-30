@@ -385,6 +385,12 @@ a {
   color: #007cb8;
 }
 
+.content-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .container-category {
   width: 200px;
   display: flex;

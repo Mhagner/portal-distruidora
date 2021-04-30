@@ -7,6 +7,7 @@ import { SingleBanner } from "../components/Home/SingleBanner";
 import { ShelfLogos } from "../components/Home/SelfLogos";
 import { ProcessTopBar } from "../components/ProcessTopBar"
 import { Shelf } from "../components/Home/Shelf";
+import { ContentCategory } from "../components/Home/ContentCategory";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <ProcessTopBar />
       <Slider items={carousel} timeInterval="3000" />
       <Benefits benefits={benefits} />
-      <Shelf
+      {/* <Shelf
         responsive={responsiveFiveColumns}
         shelfTitle="Navegue por nossas"
         shelfTitleSpan="Categorias"
@@ -23,7 +24,8 @@ export default function Home() {
         itemClass="item-class-home"
         sliderClass="slider-home"
         collection={categoryIcons}
-      />
+      /> */}
+      <ContentCategory />
     {/*   <SingleBanner
         banners={banners}
       /> */}
