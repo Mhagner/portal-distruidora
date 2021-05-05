@@ -288,6 +288,15 @@ a {
   transition: all 0.5s;
   border: 8px solid #007cb8;
   padding: 8px;
+
+}
+
+.infocard {
+  max-width: 100%;
+  margin: 32px 0;
+  height: 400px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
 }
 
 .institucional .footer-social a {

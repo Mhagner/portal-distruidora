@@ -1,19 +1,29 @@
 export const carousel = [
     {
-        image: "img/slides/slide-1.png",
-        active: true,
-        alt: "hero 1"
-    }
-   /*  {
-        image: "img/hero-2.jpg",
+        image: "img/banners/banner-tomadas.png",
         active: false,
         alt: "hero 2"
     },
     {
-        image: "img/hero-3.jpg",
+        image: "img/banners/banner-mangueira.png",
         active: false,
-        alt: "hero 3"
-    } */
+        alt: "hero 2"
+    },
+    {
+        image: "img/banners/banner-iluminacao.png",
+        active: true,
+        alt: "hero 2"
+    },
+    {
+        image: "img/banners/banner-cabos.png",
+        active: false,
+        alt: "hero 2"
+    },
+    {
+        image: "img/banners/banner-whatsapp.png",
+        active: false,
+        alt: "hero 2"
+    }
 ]
 
 export const benefits = [
