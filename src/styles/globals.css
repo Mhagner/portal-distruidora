@@ -292,11 +292,27 @@ a {
 }
 
 .infocard {
-  max-width: 100%;
+  width: 100%;
+  max-width: 360px;
+  max-height: 360px;
   margin: 32px 0;
   height: 400px;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
+}
+
+.middle {
+  max-width: 580px;
+}
+
+.large {
+  max-width: 1280px;
+}
+
+.container-infocard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .institucional .footer-social a {

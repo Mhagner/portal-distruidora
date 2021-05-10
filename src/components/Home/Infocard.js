@@ -1,14 +1,17 @@
 export function Infocard({
-    backgroundImage
+    backgroundImage,
+    middle,
+    large
 }) {
     return (
-        <div className="container">
-            <section className="infocard" style={{
-                backgroundImage: `url(${backgroundImage})`,
-                backgroundRepeat: "no-repeat"
-            }}>
-            </section>
+        <div className={
+            `infocard 
+            ${middle ? 'middle' : ''}
+            ${large ? 'large' : ''}`
+        } style={{
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundRepeat: "no-repeat"
+        }}>
         </div>
-
     )
 }

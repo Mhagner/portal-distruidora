@@ -14,6 +14,27 @@ export default function Home() {
       <Slider items={carousel} timeInterval="5000" />
       <Benefits benefits={benefits} />
       <ContentCategory />
+      <div className="container">
+        <div className="container-infocard">
+          <Infocard
+            backgroundImage="img/spots/spot-ferramentas.png"
+          />
+          <Infocard
+            backgroundImage="img/spots/spot-disjuntores.png"
+          />
+          <Infocard
+            backgroundImage="img/spots/spot-cabos.png"
+          />
+          <Infocard
+            backgroundImage="img/spots/spot-cabos.png"
+            middle
+          />
+          <Infocard
+            backgroundImage="img/spots/spot-cabos.png"
+            middle
+          />
+        </div>
+      </div>
       <ShelfLogos
         responsive={responsiveFiveColumns}
         sliderClassLogo="slider-logo"
