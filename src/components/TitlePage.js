@@ -7,7 +7,7 @@ export function TitlePage({
         <>
             {!left &&
                 <div>
-                    <h2 className="title-page text-center mt-4 mb-4">
+                    <h2 className="title-shelf text-center mt-4 mb-4">
                         {description}{' '}
                         <span>{descriptionSpan}</span>
                     </h2>

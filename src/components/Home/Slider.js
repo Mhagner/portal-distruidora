@@ -17,29 +17,32 @@ export function Slider({ timeInterval, items }) {
             />
         </div> || []
     ))
-    
+
     return (
-        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel"
-            data-interval={timeInterval}>
-            <ol className="carousel-indicators">
-                {indicators}
-            </ol>
-            <div className="carousel-inner">
-                {sliders}
-            </div>
-            
-            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <div className="arrow-container">
-                    <span className="carousel-control-prev-icon" aria-hidden="true" />
+        <section className="content__category content__category--grey">
+            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel"
+                data-interval={timeInterval}>
+                <ol className="carousel-indicators">
+                    {indicators}
+                </ol>
+                <div className="carousel-inner">
+                    {sliders}
                 </div>
-                <span className="sr-only">Anterior</span>
-            </a>
-            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <div className="arrow-container">
-                    <span className="carousel-control-next-icon" aria-hidden="true" />
-                </div>
-                <span className="sr-only">Próximo</span>
-            </a>
-        </div >
+
+                <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <div className="arrow-container">
+                        <span className="carousel-control-prev-icon" aria-hidden="true" />
+                    </div>
+                    <span className="sr-only">Anterior</span>
+                </a>
+                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <div className="arrow-container">
+                        <span className="carousel-control-next-icon" aria-hidden="true" />
+                    </div>
+                    <span className="sr-only">Próximo</span>
+                </a>
+            </div >
+        </section>
+
     )
 }
