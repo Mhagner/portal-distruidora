@@ -260,9 +260,14 @@ export const menu = [
         link: "/about"
     },
     {
+        description: "Fale conosco",
+        link: "/contact-us"
+    },
+    {
         description: "Orçamentos",
         link: "/budget"
     }
+   
 ]
 
 export const categoryIcons = [

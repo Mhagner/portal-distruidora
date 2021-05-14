@@ -229,7 +229,6 @@ a {
 
 /* SHELF */
 
-
 .shelf-products-home {
   margin: 24px 0;
 }
@@ -288,7 +287,35 @@ a {
   transition: all 0.5s;
   border: 8px solid #007cb8;
   padding: 8px;
+}
 
+.mapouter,
+.gmap_canvas {
+  width: auto !important;
+  height: 300px !important;
+  border-radius: 8px;
+ 
+}
+
+.gmap_canvas iframe {
+  border-radius: 8px;
+  display: flex;
+  max-width: 100%;
+  max-height: 300px;
+  border: 3px solid #007cb8;
+}
+
+@media (min-width: 1026px) {
+  .mapouter,
+  .gmap_canvas {
+    width: 802px !important;
+    height: 608px !important;
+  }
+
+  .gmap_canvas iframe {
+    max-width: 802px !important;
+    max-height: 608px;
+  }
 }
 
 .infocard {
