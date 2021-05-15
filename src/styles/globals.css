@@ -440,12 +440,35 @@ a {
 
 /* Banners */
 
+.item-class-logo {
+  width: 340px !important;
+}
+
+@media (min-width: 1026px) {
+  .item-class-logo {
+    width: 317px !important;
+  }
+}
+
 .partner-logo {
   padding: 38px 50px;
 }
 
+.logo-item img {
+  max-width: auto;
+  max-height: 56px;
+}
+
+
+.shelf-logo-class {
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .slider-logo {
-  background-color: #303030;
+  background-color: #f5f5f5;
 }
 
 .breadcrumb-text span {

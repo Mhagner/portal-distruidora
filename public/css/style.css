@@ -1480,8 +1480,15 @@ ol {
 	padding: 38px 0;
 }
 
+.partner-logo--light {
+	background: #fff;
+	padding: 38px 0;
+}
+
 .logo-carousel .logo-item {
 	display: table;
+	width: auto;
+	height: 44px
 }
 
 .logo-carousel .logo-item .tablecell-inner {

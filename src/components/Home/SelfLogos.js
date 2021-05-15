@@ -32,7 +32,7 @@ export function ShelfLogos({
             sliderClass={sliderClassLogo}
             slidesToSlide={1}
             swipeable
-            arrows={false}
+            arrows={true}
         >
             {collectionLogos.map((logo, index) => (
                 <PatnerLogo key={index}

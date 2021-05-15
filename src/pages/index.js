@@ -7,6 +7,7 @@ import { ProcessTopBar } from "../components/ProcessTopBar"
 import { ContentCategory } from "../components/Home/ContentCategory";
 import { Infocard } from "../components/Home/Infocard";
 
+
 export default function Home() {
   return (
     <>
@@ -37,14 +38,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <ShelfLogos
-        responsive={responsiveFiveColumns}
-        sliderClassLogo="slider-logo"
-        shelfClassLogo="shelf-logo-class"
-        dotListClassLogo="dot-shelf-logo"
-        itemClassLogo="item-class-logo"
-        collectionLogos={logos}
-      />
     </>
   )
 }

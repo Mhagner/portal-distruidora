@@ -190,7 +190,7 @@ export const allCategories = [
         description: "Mangueiras",
         link: "/mangueiras"
     }
-    
+
 ]
 
 export const mainCategories = [
@@ -220,32 +220,94 @@ export const categories = [
     {
         id: "1",
         slug: "iluminacao",
-        categoryName: "Iluminação"
+        categoryName: "Iluminação",
+        brands: [
+            {
+                linkLogo: "img/logos/siemens.png",
+                altLogo: "siemens"
+            },
+            {
+                linkLogo: "img/logos/intelbras.png",
+                altLogo: "Intelbras"
+            },
+            {
+                linkLogo: "img/logos/steck.png",
+                altLogo: "Steck"
+            },
+            {
+                linkLogo: "img/logos/osram.png",
+                altLogo: "Osram"
+            },
+            {
+                linkLogo: "img/logos/stella.png",
+                altLogo: "Stella"
+            },
+            {
+                linkLogo: "img/logos/tigre.png",
+                altLogo: "Tigre"
+            }
+        ],
+        banner: "img/banners/banner-iluminacao.png"
     },
     {
         id: "2",
         slug: "cabos-e-fios",
-        categoryName: "Cabos e fios"
+        categoryName: "Cabos e fios",
+        brands: [
+            {
+                linkLogo: "img/logos/siemens.png",
+                altLogo: "siemens"
+            }
+        ],
+        banner: ""
     },
     {
         id: "3",
         slug: "ferramentas",
-        categoryName: "Ferramentas"
+        categoryName: "Ferramentas",
+        brands: [
+            {
+                linkLogo: "img/logos/siemens.png",
+                altLogo: "siemens"
+            }
+        ],
+        banner: ""
     },
     {
         id: "4",
         slug: "tomadas-e-interruptores",
-        categoryName: "Tomadas e interruptores"
+        categoryName: "Tomadas e interruptores",
+        brands: [
+            {
+                linkLogo: "img/logos/siemens.png",
+                altLogo: "siemens"
+            }
+        ],
+        banner: ""
     },
     {
         id: "5",
         slug: "disjuntores",
-        categoryName: "Disjuntores"
+        categoryName: "Disjuntores",
+        brands: [
+            {
+                linkLogo: "img/logos/siemens.png",
+                altLogo: "siemens"
+            }
+        ],
+        banner: ""
     },
     {
         id: "6",
         slug: "mangueiras",
-        categoryName: "Mangueiras"
+        categoryName: "Mangueiras",
+        brands: [
+            {
+                linkLogo: "img/logos/siemens.png",
+                altLogo: "siemens"
+            }
+        ],
+        banner: ""
     }
 
 ]
@@ -264,10 +326,10 @@ export const menu = [
         link: "/contact-us"
     },
     {
-        description: "Orçamentos",
+        description: "Solicitar orçamento",
         link: "/budget"
     }
-   
+
 ]
 
 export const categoryIcons = [

@@ -1,6 +1,6 @@
 export function PatnerLogo({ linkLogo, altLogo }) {
     return (
-        <div className="partner-logo">
+        <div className="partner-logo--light">
             <div className="container">
                 <div className="logo-item">
                     <div className="tablecell-inner">

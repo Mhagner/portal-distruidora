@@ -1,18 +1,36 @@
 import { getCategoryBySlug, getAllCategoriesSlug } from '../hooks/catefories'
-/* import { ProductList } from '../components/Products/ProductList' */
 import { Breadcrumb } from '../components/Breadcrumb'
 import { ProcessTopBar } from "../components/ProcessTopBar"
+import { TitlePage } from '../components/TitlePage';
+import { Infocard } from "../components/Home/Infocard";
+import { ShelfLogos } from "../components/Home/SelfLogos";
+import { shelfLogo } from '../config'
 
 export default function Categories({ category }) {
-    const { categoryName } = category
+    const { categoryName, brands, banner } = category
 
     return (
         <>
             <ProcessTopBar />
             <Breadcrumb pageName={categoryName} />
-           {/*  <div className="container pl-4 pr-4">
-                <ProductList products={products} />
-            </div> */}
+            <div className="container">
+                <TitlePage
+                    description="Categoria"
+                    descriptionSpan={categoryName}
+                />
+                <Infocard
+                    backgroundImage={banner}
+                    large
+                />
+                <ShelfLogos
+                    responsive={shelfLogo}
+                    sliderClassLogo="slider-logo"
+                    shelfClassLogo="shelf-logo-class"
+                    dotListClassLogo="dot-shelf-logo"
+                    itemClassLogo="item-class-logo"
+                    collectionLogos={brands}
+                />
+            </div>
         </>
     )
 }
