@@ -1,9 +1,6 @@
 import Image from "next/image"
 
 export function GalleryCategory({ photos }){
-
-    console.log(photos)
-
     return (
         <div className="gallery__container">
             {photos.map((photo) => (
