@@ -5,9 +5,10 @@ import { TitlePage } from '../components/TitlePage';
 import { Infocard } from "../components/Home/Infocard";
 import { ShelfLogos } from "../components/Home/SelfLogos";
 import { shelfLogo } from '../config'
+import { GalleryCategory } from '../components/GalleryCategory';
 
 export default function Categories({ category }) {
-    const { categoryName, brands, banner } = category
+    const { categoryName, brands, banner, photos } = category
 
     return (
         <>
@@ -29,6 +30,9 @@ export default function Categories({ category }) {
                     dotListClassLogo="dot-shelf-logo"
                     itemClassLogo="item-class-logo"
                     collectionLogos={brands}
+                />
+                <GalleryCategory 
+                    photos={photos}
                 />
             </div>
         </>

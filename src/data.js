@@ -247,7 +247,57 @@ export const categories = [
                 altLogo: "Tigre"
             }
         ],
-        banner: "img/banners/banner-iluminacao.png"
+        banner: "img/banners/banner-iluminacao.png",
+        photos: [
+            {
+                image:  "/img/gallery/decoracao-1.png",
+                alt: "teste",
+                width: 620,
+                height: 400
+            },
+            {   
+                image:  "/img/gallery/comercial-1.png",
+                alt: "teste",
+                width: 620,
+                height: 400
+            },
+            {
+                image:  "/img/gallery/comercial-2.png",
+                alt: "teste",
+                width: 410,
+                height: 300
+            },
+            {
+                image:  "/img/gallery/decorativa-3.png",
+                alt: "teste",
+                width: 410,
+                height: 300
+            },
+            {
+                image:  "/img/gallery/decorativa-4.png",
+                alt: "teste",
+                width: 410,
+                height: 300
+            },
+            {
+                image:  "/img/gallery/decorativa-2.png",
+                alt: "teste",
+                width: 620,
+                height: 400
+            },
+            {
+                image:  "/img/gallery/comercial-3.png",
+                alt: "teste",
+                width: 305,
+                height: 400
+            },
+            {
+                image:  "/img/gallery/comercial-4.png",
+                alt: "teste",
+                width: 305,
+                height: 400
+            }
+        ]
     },
     {
         id: "2",
@@ -259,7 +309,27 @@ export const categories = [
                 altLogo: "siemens"
             }
         ],
-        banner: ""
+        banner: "",
+        photos: [
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 600,
+                height: 600
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 400,
+                height: 200
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 400,
+                height: 200
+            }
+        ]
     },
     {
         id: "3",
@@ -271,7 +341,27 @@ export const categories = [
                 altLogo: "siemens"
             }
         ],
-        banner: ""
+        banner: "",
+        photos: [
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            }
+        ]
     },
     {
         id: "4",
@@ -283,7 +373,27 @@ export const categories = [
                 altLogo: "siemens"
             }
         ],
-        banner: ""
+        banner: "",
+        photos: [
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            }
+        ]
     },
     {
         id: "5",
@@ -295,7 +405,27 @@ export const categories = [
                 altLogo: "siemens"
             }
         ],
-        banner: ""
+        banner: "",
+        photos: [
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            }
+        ]
     },
     {
         id: "6",
@@ -307,7 +437,27 @@ export const categories = [
                 altLogo: "siemens"
             }
         ],
-        banner: ""
+        banner: "",
+        photos: [
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            }
+        ]
     }
 
 ]
