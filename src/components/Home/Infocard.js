@@ -4,13 +4,11 @@ export function Infocard({
     large
 }) {
     return (
-        <div className={
-            `infocard 
-            ${middle ? 'middle' : ''}
-            ${large ? 'large' : ''}`
-        } style={{
+        <div style={{
             backgroundImage: `url(${backgroundImage})`,
-            backgroundRepeat: "no-repeat"
+            backgroundRepeat: "no-repeat",
+            width: 600,
+            height: 200
         }}>
         </div>
     )

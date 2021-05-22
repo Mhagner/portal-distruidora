@@ -7,7 +7,6 @@ import 'react-whatsapp-widget/dist/index.css'
 export function Layout({ children }) {
     return (
         <>
-          
             <ProcessTopBar />
             <Header />
             <WhatsAppWidget

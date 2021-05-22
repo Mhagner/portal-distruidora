@@ -2,27 +2,30 @@ export const carousel = [
     {
         image: "img/banners/banner-tomadas.png",
         active: false,
-        alt: "hero 2"
+        alt: "Tomadas"
     },
     {
         image: "img/banners/banner-mangueira.png",
         active: false,
-        alt: "hero 2"
+        alt: "Mangueiras"
     },
     {
         image: "img/banners/banner-iluminacao.png",
         active: true,
-        alt: "hero 2"
+        alt: "Iluminação",
+        link: 'iluminacao'
     },
     {
         image: "img/banners/banner-cabos.png",
         active: false,
-        alt: "hero 2"
+        alt: "Fios e Cabos"
     },
     {
         image: "img/banners/banner-whatsapp.png",
         active: false,
-        alt: "hero 2"
+        alt: "Whatsapp",
+        target: false,
+        link: "https://api.whatsapp.com/send/?phone=5562995010927&text&app_absent=0"
     }
 ]
 
@@ -175,20 +178,40 @@ export const allCategories = [
         link: "/iluminacao"
     },
     {
-        description: "Ferramentas",
-        link: "/ferramentas"
+        description: "Acessórios e ferramentas",
+        link: "/acessorios-e-ferramentas"
     },
     {
         description: "Tomadas e interruptores",
         link: "/tomadas-e-interruptores"
     },
     {
-        description: "Disjuntores",
-        link: "/disjuntores"
+        description: "Disjuntores e dispositivo de proteção",
+        link: "/disjuntores-dispositivos-de-protecao"
     },
     {
-        description: "Mangueiras",
-        link: "/mangueiras"
+        description: "Eletrodutos e mangueiras",
+        link: "/eletrodutos-e-mangueiras"
+    },
+    {
+        description: "Distribuição",
+        link: "/distribuicao"
+    },
+    {
+        description: "Soquetes e adaptadores",
+        link: "/soquetes-e-adaptadores"
+    },
+    {
+        description: "Tomadas industriais",
+        link: "/tomadas-industriais"
+    },
+    {
+        description: "Conectores e terminais",
+        link: "/conectores-e-terminais"
+    },
+    {
+        description: "Eletrocalhas e perfilados",
+        link: "/eletrocalhas-e-perfilados"
     }
 
 ]
@@ -221,6 +244,7 @@ export const categories = [
         id: "1",
         slug: "iluminacao",
         categoryName: "Iluminação",
+        icon: "/img/svg/icons/iluminacao-decorativa.svg",
         brands: [
             {
                 linkLogo: "img/logos/siemens.png",
@@ -303,6 +327,7 @@ export const categories = [
         id: "2",
         slug: "cabos-e-fios",
         categoryName: "Cabos e fios",
+        icon: "/img/svg/icons/fios.svg",
         brands: [
             {
                 linkLogo: "img/logos/siemens.png",
@@ -333,8 +358,9 @@ export const categories = [
     },
     {
         id: "3",
-        slug: "ferramentas",
-        categoryName: "Ferramentas",
+        slug: "acessorios-e-ferramentas",
+        categoryName: "Acessórios e Ferramentas",
+        icon: "/img/svg/icons/ferramentas.svg",
         brands: [
             {
                 linkLogo: "img/logos/siemens.png",
@@ -367,6 +393,7 @@ export const categories = [
         id: "4",
         slug: "tomadas-e-interruptores",
         categoryName: "Tomadas e interruptores",
+        icon: "/img/svg/icons/tomada.svg",
         brands: [
             {
                 linkLogo: "img/logos/siemens.png",
@@ -397,8 +424,9 @@ export const categories = [
     },
     {
         id: "5",
-        slug: "disjuntores",
-        categoryName: "Disjuntores",
+        slug: "disjuntores-e-dispositivos-de-protecao",
+        categoryName: "Disjuntores e dispositivos de proteção",
+        icon: "/img/svg/icons/disjuntor.svg",
         brands: [
             {
                 linkLogo: "img/logos/siemens.png",
@@ -429,8 +457,108 @@ export const categories = [
     },
     {
         id: "6",
-        slug: "mangueiras",
-        categoryName: "Mangueiras",
+        slug: "eletrodutos-e-mangueiras",
+        categoryName: "Eletrodutos e mangueiras",
+        icon: "/img/svg/icons/mangueira.svg",
+        brands: [
+            {
+                linkLogo: "img/logos/siemens.png",
+                altLogo: "siemens"
+            }
+        ],
+        banner: "",
+        photos: [
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            }
+        ]
+    },
+    {
+        id: "7",
+        slug: "soquetes-e-adaptadores",
+        categoryName: "Soquetes e adaptadores",
+        icon: "/img/svg/icons/soquete.svg",
+        brands: [
+            {
+                linkLogo: "img/logos/siemens.png",
+                altLogo: "siemens"
+            }
+        ],
+        banner: "",
+        photos: [
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            }
+        ]
+    },
+    {
+        id: "8",
+        slug: "distribuicao",
+        categoryName: "Distribuição",
+        icon: "/img/svg/icons/distribuicao.svg",
+        brands: [
+            {
+                linkLogo: "img/logos/siemens.png",
+                altLogo: "siemens"
+            }
+        ],
+        banner: "",
+        photos: [
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            },
+            {
+                image:  "/img/blog/blog-1.jpg",
+                alt: "teste",
+                width: 100,
+                height: 100
+            }
+        ]
+    },
+    {
+        id: "9",
+        slug: "tomadas-industriais",
+        categoryName: "Tomadas industriais",
+        icon: "/img/svg/icons/tomada-industrial.svg",
         brands: [
             {
                 linkLogo: "img/logos/siemens.png",
@@ -482,45 +610,3 @@ export const menu = [
 
 ]
 
-export const categoryIcons = [
-    {
-        image: "/img/svg/icons/disjuntor.svg",
-        text: "Disjuntores",
-        link: "/disjuntores"
-    },
-    {
-        image: "/img/svg/icons/ferramentas.svg",
-        text: "Ferramentas",
-        link: "/ferramentas"
-    },
-    {
-        image: "/img/svg/icons/fios.svg",
-        text: "Fios e cabos",
-        link: "/fios-e-cabos"
-    },
-    {
-        image: "/img/svg/icons/iluminacao-decorativa.svg",
-        text: "Iluminação",
-        link: "/iluminacao"
-    },
-    {
-        image: "/img/svg/icons/interruptor.svg",
-        text: "Interruptores",
-        link: "/interruptores"
-    },
-    {
-        image: "/img/svg/icons/mangueira.svg",
-        text: "Mangueiras",
-        link: "/mangueiras"
-    },
-    {
-        image: "/img/svg/icons/soquete.svg",
-        text: "Soquetes",
-        link: "/soquetes"
-    },
-    {
-        image: "/img/svg/icons/tomada.svg",
-        text: "Tomadas",
-        link: "/tomadas"
-    },
-]

@@ -11,7 +11,7 @@ export function Header() {
                 <div className="inner-header">
                     <div className="row">
                         <Logo />
-                        <SearchBar />
+{/*                         <SearchBar /> */}
                     </div>
                 </div>
             </div>

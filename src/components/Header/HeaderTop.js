@@ -5,7 +5,7 @@ export function HeaderTop() {
                 <div className="ht-left">
                     <div className="mail-service">
                         <i className=" fa fa-envelope" />
-                    comercial@portaldistribuidora.com.br
+                    atendimento@portaldistribuidora.com.br
                     </div>
                     <div className="phone-service">
                         <i className=" fa fa-phone" />
@@ -20,10 +20,10 @@ export function HeaderTop() {
                     <div className="top-social">
                         <a href="#"><i className="ti-facebook" /></a>
                         <a href="#"><i className="ti-instagram" /></a>
-                        {/* <a href="#"><i className="ti-youtube" /></a> */}
-                        {/* <a href="#"><i className="ti-twitter-alt" /></a> */}
-                        {/* <a href="#"><i className="ti-linkedin" /></a> */}
-                        {/* <a href="#"><i className="ti-pinterest" /></a> */}
+                       {/*  <a href="#"><i className="ti-youtube" /></a>
+                        <a href="#"><i className="ti-twitter-alt" /></a> */}
+                       {/*  <a href="#"><i className="ti-linkedin" /></a>
+                        <a href="#"><i className="ti-pinterest" /></a> */}
                     </div>
                 </div>
             </div>

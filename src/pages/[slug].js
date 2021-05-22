@@ -16,7 +16,6 @@ export default function Categories({ category }) {
             <Breadcrumb pageName={categoryName} />
             <div className="container">
                 <TitlePage
-                    description="Categoria"
                     descriptionSpan={categoryName}
                 />
                 <Infocard

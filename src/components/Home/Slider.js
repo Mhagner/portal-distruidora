@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export function Slider({ timeInterval, items }) {
     const indicators = items.map((item, index) => (
         <li key={index}
@@ -11,10 +13,15 @@ export function Slider({ timeInterval, items }) {
         <div
             key={index}
             className={`carousel-item ${(item.active) ? 'active' : ''}`}>
-            <img
-                className="d-block w-100"
-                src={item.image} alt={item.alt}
-            />
+
+            <Link href={(item.link) ? item.link : "/"}>
+                <a target={(item.target) ? '_blank' : ''}>
+                    <img
+                        className="d-block w-100"
+                        src={item.image} alt={item.alt}
+                    />
+                </a>
+            </Link>
         </div> || []
     ))
 

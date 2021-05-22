@@ -1,5 +1,5 @@
 import { Category } from './Category'
-import { categoryIcons } from '../../data'
+import { categories } from '../../data'
 import { TitlePage } from '../TitlePage'
 
 export function ContentCategory() {
@@ -12,12 +12,12 @@ export function ContentCategory() {
 
                 />
                 <div className="content-category">
-                    {categoryIcons.map((item, index) => (
+                    {categories.map((category) => (
                         <Category
-                            key={index}
-                            image={item.image}
-                            text={item.text}
-                            link={item.link}
+                            key={category.id}
+                            image={category.icon}
+                            text={category.categoryName}
+                            link={category.slug}
                         />
                     ))}
                 </div>

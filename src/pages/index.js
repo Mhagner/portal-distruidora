@@ -19,9 +19,12 @@ export default function Home() {
         <div className="container">
           <div className="container-infocard">
             <Infocard
-              backgroundImage="img/spots/spot-ferramentas.png"
+              backgroundImage="img/banner-home/ferramentas.png"
             />
             <Infocard
+              backgroundImage="img/banner-home/interruptores.png"
+            />
+         {/*    <Infocard
               backgroundImage="img/spots/spot-disjuntores.png"
             />
             <Infocard
@@ -34,7 +37,7 @@ export default function Home() {
             <Infocard
               backgroundImage="img/spots/spot-cabos.png"
               middle
-            />
+            /> */}
           </div>
         </div>
       </section>
