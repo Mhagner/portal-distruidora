@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import { Breadcrumb } from '../../components/Breadcrumb'
 import { FooterSocial } from '../../components/Footer/FooterSocial'
 import { TitlePage } from '../../components/TitlePage'
@@ -6,6 +7,10 @@ import Image from 'next/image'
 export default function About() {
     return (
         <>
+            <NextSeo
+                title="Quem somos"
+                description="A Portal Distribuidora iniciou suas atividades em 2007 com o intuito de atender as demandas da construção civil de materiais elétricos e iluminação na região de Goiânia - GO."
+            />
             <Breadcrumb pageName="Quem somos" />
             <div className="container pl-4 pr-4">
                 <TitlePage description="Sobre" descriptionSpan="nós" />

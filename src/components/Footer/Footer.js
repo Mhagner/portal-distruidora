@@ -6,8 +6,8 @@ import { Newsletter } from "./Newslatter";
 let items = [
     {description: "Quem somos", url: "/about"}, 
     {description: "Política de privacidade", url: "/polices"},
-    {description: "Fale conosco", url: "/contact-us"},
-    {description: "SAC - Serviços ao cliente", url: "/sac"},
+    {description: "Fale conosco", url: "/contact-us"}
+    /* {description: "SAC - Serviços ao cliente", url: "/sac"}, */
 ]
 
 export function Footer() {
