@@ -450,6 +450,7 @@ a {
 .gallery__container div {
   margin-bottom: 10px !important;
   border-radius: 6px;
+  border: 1px solid #f5f5f5;
 }
 
 .gallery__container div:hover {

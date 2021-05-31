@@ -6,12 +6,17 @@ import { Infocard } from "../components/Home/Infocard";
 import { ShelfLogos } from "../components/Home/SelfLogos";
 import { shelfLogo } from '../config'
 import { GalleryCategory } from '../components/GalleryCategory';
+import { NextSeo } from 'next-seo'
 
 export default function Categories({ category }) {
     const { categoryName, brands, banner, photos } = category
 
     return (
         <>
+            <NextSeo
+                title={categoryName}
+                description={categoryName}
+            />
             <ProcessTopBar />
             <Breadcrumb pageName={categoryName} />
             <div className="container">
@@ -30,7 +35,7 @@ export default function Categories({ category }) {
                     itemClassLogo="item-class-logo"
                     collectionLogos={brands}
                 />
-                <GalleryCategory 
+                <GalleryCategory
                     photos={photos}
                 />
             </div>

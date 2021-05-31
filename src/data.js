@@ -18,13 +18,14 @@ export const carousel = [
     {
         image: "img/banners/banner-cabos.png",
         active: false,
-        alt: "Fios e Cabos"
+        alt: "Fios e Cabos",
+        link: 'cabos-e-fios'
     },
     {
         image: "img/banners/banner-whatsapp.png",
         active: false,
         alt: "Whatsapp",
-        target: false,
+        target: true,
         link: "https://api.whatsapp.com/send/?phone=5562995010927&text&app_absent=0"
     }
 ]
@@ -332,27 +333,77 @@ export const categories = [
             {
                 linkLogo: "img/logos/siemens.png",
                 altLogo: "siemens"
+            },
+            {
+                linkLogo: "img/logos/intelbras.png",
+                altLogo: "Intelbras"
+            },
+            {
+                linkLogo: "img/logos/steck.png",
+                altLogo: "Steck"
+            },
+            {
+                linkLogo: "img/logos/osram.png",
+                altLogo: "Osram"
+            },
+            {
+                linkLogo: "img/logos/stella.png",
+                altLogo: "Stella"
+            },
+            {
+                linkLogo: "img/logos/tigre.png",
+                altLogo: "Tigre"
             }
         ],
-        banner: "",
+        banner: "/img/gallery/cabos-e-fios/banner-fios-1.png",
         photos: [
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:  "/img/gallery/cabos-e-fios/cabos-1.jpg",
                 alt: "teste",
-                width: 600,
-                height: 600
+                width: 620,
+                height: 400
+            },
+            {   
+                image:  "/img/gallery/cabos-e-fios/cabos-2.jpg",
+                alt: "teste",
+                width: 620,
+                height: 400
             },
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:  "/img/gallery/cabos-e-fios/cabos-3.jpg",
                 alt: "teste",
-                width: 400,
-                height: 200
+                width: 410,
+                height: 300
             },
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:  "/img/gallery/cabos-e-fios/fios-2.jpg",
                 alt: "teste",
-                width: 400,
-                height: 200
+                width: 410,
+                height: 300
+            },
+            {
+                image:  "/img/gallery/cabos-e-fios/fios-3.jpg",
+                alt: "teste",
+                width: 410,
+                height: 300
+            },
+            {
+                image:  "/img/gallery/cabos-e-fios/fios-4.jpg",
+                alt: "teste",
+                width: 620,
+                height: 400
+            },
+            {
+                image:  "/img/gallery/cabos-e-fios/fios-5.jpg",
+                alt: "teste",
+                width: 305,
+                height: 400
+            },
+            {
+                image:  "/img/gallery/cabos-e-fios/fios-6.jpg",
+                alt: "teste",
+                width: 305,
+                height: 400
             }
         ]
     },
@@ -370,22 +421,52 @@ export const categories = [
         banner: "",
         photos: [
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:  "/img/gallery/ferramentas/ferramenta-1.jpg",
                 alt: "teste",
-                width: 100,
-                height: 100
+                width: 620,
+                height: 400
+            },
+            {   
+                image: "/img/gallery/ferramentas/ferramenta-2.jpg",
+                alt: "teste",
+                width: 620,
+                height: 400
             },
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:  "/img/gallery/ferramentas/ferramenta-3.jpg",
                 alt: "teste",
-                width: 100,
-                height: 100
+                width: 410,
+                height: 300
             },
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:  "/img/gallery/ferramentas/ferramenta-4.jpg",
                 alt: "teste",
-                width: 100,
-                height: 100
+                width: 410,
+                height: 300
+            },
+            {
+                image: "/img/gallery/ferramentas/furadeira.png",
+                alt: "teste",
+                width: 410,
+                height: 300
+            },
+            {
+                image:  "/img/gallery/ferramentas/furadeira-2.jpg",
+                alt: "teste",
+                width: 620,
+                height: 400
+            },
+            {
+                image:  "/img/gallery/ferramentas/maquita-1.jpg",
+                alt: "teste",
+                width: 305,
+                height: 400
+            },
+            {
+                image:  "/img/gallery/cabos-e-fios/fios-6.jpg",
+                alt: "teste",
+                width: 305,
+                height: 400
             }
         ]
     },
