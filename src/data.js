@@ -27,6 +27,13 @@ export const carousel = [
         alt: "Whatsapp",
         target: true,
         link: "https://api.whatsapp.com/send/?phone=5562995010927&text&app_absent=0"
+    },
+    {
+        image: "/img/gallery/ferramentas/banner-ferramentas.png",
+        active: false,
+        alt: "Ferramentas",
+        target: false,
+        link: "acessorios-e-ferramentas"
     }
 ]
 
@@ -414,11 +421,27 @@ export const categories = [
         icon: "/img/svg/icons/ferramentas.svg",
         brands: [
             {
-                linkLogo: "img/logos/siemens.png",
-                altLogo: "siemens"
+                linkLogo: "img/logos/makita.png",
+                altLogo: "Makita"
+            },
+            {
+                linkLogo: "img/logos/bosh.png",
+                altLogo: "Bosh"
+            },
+            {
+                linkLogo: "img/logos/black.png",
+                altLogo: "Black & Decker"
+            },
+            {
+                linkLogo: "img/logos/dealt.png",
+                altLogo: "DeWalt"
+            },
+            {
+                linkLogo: "img/logos/starret.png",
+                altLogo: "Starret"
             }
         ],
-        banner: "",
+        banner: "/img/gallery/ferramentas/banner-ferramentas.png",
         photos: [
             {
                 image:  "/img/gallery/ferramentas/ferramenta-1.jpg",
