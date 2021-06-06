@@ -500,29 +500,59 @@ export const categories = [
         icon: "/img/svg/icons/tomada.svg",
         brands: [
             {
-                linkLogo: "img/logos/siemens.png",
-                altLogo: "siemens"
+                linkLogo: "img/logos/weg.png",
+                altLogo: "Weg"
             }
         ],
-        banner: "",
+        banner: "/img/gallery/tomadas/banner-tomadas.png",
         photos: [
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:  "/img/gallery/tomadas/tomada-2.jpg",
                 alt: "teste",
-                width: 100,
-                height: 100
+                width: 620,
+                height: 400
+            },
+            {   
+                image: "/img/gallery/tomadas/tomada-3.jpg",
+                alt: "teste",
+                width: 620,
+                height: 400
             },
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:  "/img/gallery/tomadas/tomada-5.jpg",
                 alt: "teste",
-                width: 100,
-                height: 100
+                width: 410,
+                height: 300
             },
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:   "/img/gallery/tomadas/tomada-6.jpg",
                 alt: "teste",
-                width: 100,
-                height: 100
+                width: 410,
+                height: 300
+            },
+            {
+                image:  "/img/gallery/tomadas/tomada-8.jpg",
+                alt: "teste",
+                width: 410,
+                height: 300
+            },
+            {
+                image: "/img/gallery/tomadas/tomada-4.jpg",
+                alt: "teste",
+                width: 620,
+                height: 400
+            },
+            {
+                image:  "/img/gallery/tomadas/tomada-1.jpg",
+                alt: "teste",
+                width: 305,
+                height: 400
+            },
+            {
+                image:  "/img/gallery/tomadas/tomada-7.png",
+                alt: "teste",
+                width: 305,
+                height: 400
             }
         ]
     },
@@ -711,6 +741,5 @@ export const menu = [
         description: "Solicitar orçamento",
         link: "/budget"
     }
-
 ]
 
