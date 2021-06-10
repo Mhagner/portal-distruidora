@@ -502,6 +502,22 @@ export const categories = [
             {
                 linkLogo: "img/logos/weg.png",
                 altLogo: "Weg"
+            },
+            {
+                linkLogo: "img/logos/fame.png",
+                altLogo: "Weg"
+            },
+            {
+                linkLogo: "img/logos/blux.png",
+                altLogo: "Weg"
+            },
+            {
+                linkLogo: "img/logos/alumbra-2.png",
+                altLogo: "Weg"
+            },
+            {
+                linkLogo: "img/logos/tramontina.png",
+                altLogo: "Weg"
             }
         ],
         banner: "/img/gallery/tomadas/banner-tomadas.png",
@@ -567,7 +583,7 @@ export const categories = [
                 altLogo: "siemens"
             }
         ],
-        banner: "",
+        banner: "/img/gallery/disjuntores/banner-disjuntores.png",
         photos: [
             {
                 image:  "/img/blog/blog-1.jpg",
@@ -600,7 +616,7 @@ export const categories = [
                 altLogo: "siemens"
             }
         ],
-        banner: "",
+        banner: "/img/gallery/mangueiras/banner-mangueiras.png",
         photos: [
             {
                 image:  "/img/blog/blog-1.jpg",
