@@ -3,8 +3,9 @@ import { Breadcrumb } from '../../components/Breadcrumb'
 import { FooterSocial } from '../../components/Footer/FooterSocial'
 import { TitlePage } from '../../components/TitlePage'
 import Image from 'next/image'
+import portalPhoto from '../../../public/img/svg/portal.png'
 
-export default function About() {
+export default function About() {   
     return (
         <>
             <NextSeo
@@ -34,10 +35,11 @@ export default function About() {
                     </div>
                     <div className="col-lg-6 mb-4 image-portal">
                         <Image
-                            src="/img/svg/portal.png"
+                            src={portalPhoto}
                             alt="Portal Distribuidora"
                             width={600}
                             height={500}
+                            placeholder="blur"
                         />
                     </div>
                 </div>
