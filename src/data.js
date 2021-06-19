@@ -579,29 +579,67 @@ export const categories = [
         icon: "/img/svg/icons/disjuntor.svg",
         brands: [
             {
-                linkLogo: "img/logos/siemens.png",
-                altLogo: "siemens"
+                linkLogo: "img/logos/steck.png",
+                altLogo: "Steck"
+            },
+            {
+                linkLogo: "img/logos/weg.png",
+                altLogo: "Weg"
+            },
+            {
+                linkLogo: "img/logos/schneider.png",
+                altLogo: "Weg"
             }
         ],
         banner: "/img/gallery/disjuntores/banner-disjuntores.png",
         photos: [
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:  "/img/gallery/disjuntores/disjuntor-1.jpg",
                 alt: "teste",
-                width: 100,
-                height: 100
+                width: 620,
+                height: 400
+            },
+            {   
+                image: "/img/gallery/disjuntores/disjuntor-2.jpg",
+                alt: "teste",
+                width: 620,
+                height: 400
             },
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:  "/img/gallery/disjuntores/disjuntor-4.jpg",
                 alt: "teste",
-                width: 100,
-                height: 100
+                width: 410,
+                height: 300
             },
             {
-                image:  "/img/blog/blog-1.jpg",
+                image:   "/img/gallery/disjuntores/disjuntor-8.jpg",
                 alt: "teste",
-                width: 100,
-                height: 100
+                width: 410,
+                height: 300
+            },
+            {
+                image:  "/img/gallery/disjuntores/disjuntor-7.jpg",
+                alt: "teste",
+                width: 410,
+                height: 300
+            },
+            {
+                image: "/img/gallery/disjuntores/disjuntor-3.jpg",
+                alt: "teste",
+                width: 620,
+                height: 400
+            },
+            {
+                image:  "/img/gallery/disjuntores/disjuntor-5.jpg",
+                alt: "teste",
+                width: 305,
+                height: 400
+            },
+            {
+                image:  "/img/gallery/disjuntores/disjuntor-6.jpg",
+                alt: "teste",
+                width: 305,
+                height: 400
             }
         ]
     },
