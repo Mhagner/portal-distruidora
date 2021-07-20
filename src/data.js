@@ -40,8 +40,8 @@ export const carousel = [
 export const benefits = [
     {
         icon: "img/icon-1.png",
-        alt: "Delevery",
-        title: "Delevery",
+        alt: "Delivery",
+        title: "Delivery",
         description: "Entregamos o seu pedido em sua residência"
     },
     {
