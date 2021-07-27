@@ -71,7 +71,7 @@ export const categories = [
             },
             {
                 linkLogo: "img/logos/intelbras.png",
-                altLogo: "Intelbras"
+                altLogo: "Intelbras"    
             },
             {
                 linkLogo: "img/logos/steck.png",

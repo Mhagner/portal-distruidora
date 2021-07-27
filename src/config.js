@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 export const responsiveFiveColumns = {
     desktop: {
         breakpoint: {
@@ -106,4 +108,7 @@ export const shelfLogo = {
     }
 }
 
-export const urlApi = 'https://portal-api-strapi.herokuapp.com'
+export const instance = axios.create({
+    baseURL: process.env.API_URL
+});
+

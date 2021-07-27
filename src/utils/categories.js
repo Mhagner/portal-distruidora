@@ -1,6 +1,5 @@
-import { categories } from '../data'
 
-export function getAllCategoriesSlug() {
+export function getAllCategoriesSlug(categories) {
     return categories.map(category => {
         return {
             params: {
@@ -10,7 +9,7 @@ export function getAllCategoriesSlug() {
     })
 }
 
-export function getCategoryBySlug(slug) {
+export function getCategoryBySlug(categories, slug) {
     return categories.find(category =>
         (category.slug === slug) ? category : null
     )

@@ -34,12 +34,16 @@ export function ShelfLogos({
             swipeable
             arrows={true}
         >
-            {collectionLogos.map((logo, index) => (
-                <PatnerLogo key={index}
-                    linkLogo={logo.linkLogo}
-                    altLogo={logo.altLogo}
-                />
-            ))}
+            {collectionLogos.map((logo, index) => {
+                const [item] = logo.linkLogo
+                
+                return (
+                    <PatnerLogo key={index}
+                        linkLogo={item.url}
+                        altLogo={logo.altLogo}
+                    />
+                )
+            })}
         </Carousel>
     )
 }

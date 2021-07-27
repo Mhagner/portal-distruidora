@@ -1,16 +1,18 @@
-import { getCategoryBySlug, getAllCategoriesSlug } from '../hooks/catefories'
+import { getCategoryBySlug, getAllCategoriesSlug } from '../utils/categories'
+/* import { categories } from '../data' */
 import { Breadcrumb } from '../components/Breadcrumb'
 import { ProcessTopBar } from "../components/ProcessTopBar"
 import { TitlePage } from '../components/TitlePage';
 import { Infocard } from "../components/Home/Infocard";
 import { ShelfLogos } from "../components/Home/SelfLogos";
-import { shelfLogo } from '../config'
+import { instance, shelfLogo } from '../config'
 import { GalleryCategory } from '../components/GalleryCategory';
 import { NextSeo } from 'next-seo'
 
 export default function Categories({ category }) {
     const { categoryName, brands, banner, photos } = category
-
+    const [item] = banner
+    
     return (
         <>
             <NextSeo
@@ -24,7 +26,7 @@ export default function Categories({ category }) {
                     descriptionSpan={categoryName}
                 />
                 <Infocard
-                    backgroundImage={banner}
+                    backgroundImage={item.url}
                     large
                 />
                 <ShelfLogos
@@ -35,17 +37,18 @@ export default function Categories({ category }) {
                     itemClassLogo="item-class-logo"
                     collectionLogos={brands}
                 />
-                <GalleryCategory
+               {/*  <GalleryCategory
                     photos={photos}
-                />
+                /> */}
             </div>
         </>
     )
 }
 
-
 export async function getStaticPaths() {
-    const paths = getAllCategoriesSlug()
+    const res = await instance.get('/categories');
+    const categories = res.data;
+    const paths = getAllCategoriesSlug(categories)
 
     return {
         paths,
@@ -54,7 +57,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const category = getCategoryBySlug(params.slug)
+    const res = await instance.get('/categories');
+    const categories = res.data;
+    const category = getCategoryBySlug(categories, params.slug)
 
     return {
         props: {
