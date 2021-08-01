@@ -1,15 +1,22 @@
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { categories } from '../../data'
 
- export function MenuAllCategories() {
+export function MenuAllCategories() {
+    const [categories, setCategories] = useState([])
 
+    useEffect(() => {
+        const res = localStorage.getItem('categories')
+        setCategories(JSON.parse(res))
+    }, []);
+
+    const list = categories || []
     return (
         <div className="nav-depart">
             <div className="depart-btn">
                 <i className="ti-menu" />
                 <span>Nossas categorias</span>
                 <ul className="depart-hover">
-                    {categories.map((category) => (
+                    {list.map((category) => (
                         <li key={category.id}>
                             <Link href={category.slug}>
                                 <a>{category.categoryName}</a>
@@ -21,3 +28,5 @@ import { categories } from '../../data'
         </div>
     )
 }
+
+

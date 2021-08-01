@@ -1,5 +1,4 @@
 import { getCategoryBySlug, getAllCategoriesSlug } from '../utils/categories'
-/* import { categories } from '../data' */
 import { Breadcrumb } from '../components/Breadcrumb'
 import { ProcessTopBar } from "../components/ProcessTopBar"
 import { TitlePage } from '../components/TitlePage';
@@ -11,8 +10,8 @@ import { NextSeo } from 'next-seo'
 
 export default function Categories({ category }) {
     const { categoryName, brands, banner, photos } = category
-    const [item] = banner
-    
+    const [image] = banner
+
     return (
         <>
             <NextSeo
@@ -26,7 +25,7 @@ export default function Categories({ category }) {
                     descriptionSpan={categoryName}
                 />
                 <Infocard
-                    backgroundImage={item.url}
+                    backgroundImage={image.url}
                     large
                 />
                 <ShelfLogos
@@ -37,9 +36,9 @@ export default function Categories({ category }) {
                     itemClassLogo="item-class-logo"
                     collectionLogos={brands}
                 />
-               {/*  <GalleryCategory
+                <GalleryCategory
                     photos={photos}
-                /> */}
+                />
             </div>
         </>
     )

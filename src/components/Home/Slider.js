@@ -1,29 +1,34 @@
 import Link from 'next/link'
 
 export function Slider({ timeInterval, items }) {
-    const indicators = items.map((item, index) => (
-        <li key={index}
-            data-target="#carouselExampleIndicators"
-            data-slide-to={index}
-            className={`${(item.active) ? 'active' : ''}`}
-        />
-    )) || []
+    const indicators = items.map((item, index) => {
+        return (
+            <li key={index}
+                data-target="#carouselExampleIndicators"
+                data-slide-to={index}
+                className={`${(item.active) ? 'active' : ''}`}
+            />
+        )
+    }) || []
 
-    const sliders = items.map((item, index) => (
-        <div
-            key={index}
-            className={`carousel-item ${(item.active) ? 'active' : ''}`}>
+    const sliders = items.map((item, index) => {
+        const [slider] = item.image
+        return (
+            <div
+                key={index}
+                className={`carousel-item ${(item.active) ? 'active' : ''}`}>
 
-            <Link href={(item.link) ? item.link : "/"}>
-                <a target={(item.target) ? '_blank' : ''}>
-                    <img
-                        className="d-block w-100"
-                        src={item.image} alt={item.alt}
-                    />
-                </a>
-            </Link>
-        </div> || []
-    ))
+                <Link href={(item.link) ? item.link : "/"}>
+                    <a target={(item.target) ? '_blank' : ''}>
+                        <img
+                            className="d-block w-100"
+                            src={slider.url} alt={item.alt}
+                        />
+                    </a>
+                </Link>
+            </div> || []
+        )
+    })
 
     return (
         <section className="content__category content__category--grey">

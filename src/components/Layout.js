@@ -8,7 +8,7 @@ export function Layout({ children }) {
     return (
         <>
             <ProcessTopBar />
-            <Header />
+            <Header/>
             <WhatsAppWidget
                 phoneNumber="5562995010927"
                 companyName="Portal Distribuidora"

@@ -1,12 +1,23 @@
 import { Layout } from '../components/Layout'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return (
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   )
 }
 
-export default MyApp
+/* export async function getStaticProps() {
+  const res = await instance.get('/categories');
+  const categories = res.data;
+
+  return {
+      props: {
+          categories
+      },
+      revalidate: 5
+  }
+}
+ */

@@ -6,12 +6,11 @@ import { SearchBar } from "./SearchBar";
 export function Header() {
     return (
         <header className="header-section">
-           <HeaderTop />
+            <HeaderTop />
             <div className="container">
                 <div className="inner-header">
                     <div className="row">
                         <Logo />
-{/*                         <SearchBar /> */}
                     </div>
                 </div>
             </div>

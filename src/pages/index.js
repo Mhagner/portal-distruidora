@@ -1,35 +1,56 @@
+import { useEffect } from 'react'
 import { NextSeo } from 'next-seo'
 import { Benefits } from "../components/Home/Benefits";
 import { Slider } from "../components/Home/Slider";
-import { carousel, benefits, logos } from '../data'
+/* import { benefits, carousel } from '../data' */
 import { ProcessTopBar } from "../components/ProcessTopBar"
 import { ContentCategory } from "../components/Home/ContentCategory";
 import { BannerPromo } from "../components/Home/BannerPromo";
+import { instance } from '../config';
 
+function Home({ carousels, categories, benefits, banners }) {
+  
+  useEffect(() => {
+    localStorage.setItem('categories', JSON.stringify(categories));
+  }, [categories]);
 
-export default function Home() {
   return (
-    <>
+   <>
       <NextSeo
         title="Home"
         description="A Portal Distribuidora iniciou suas atividades em 2007 com o intuito de atender as demandas da construção civil de materiais elétricos e iluminação na região de Goiânia - GO."
       />
       <ProcessTopBar />
-      <Slider items={carousel} timeInterval="5000" />
+      <Slider items={carousels} timeInterval="5000" />
       <Benefits benefits={benefits} />
-      <ContentCategory />
-      <section className="content__category content__category--white">
-        <div className="container">
-          <div className="container-infocard">
-            <BannerPromo
-              backgroundImage="img/banner-home/ferramentas.png"
-            />
-            <BannerPromo
-              backgroundImage="img/banner-home/interruptores.png"
-            />
-          </div>
-        </div>
-      </section>
-    </>
+      <ContentCategory categories={categories} />
+      <BannerPromo banners={banners} />
+   </>
   )
 }
+
+export async function getStaticProps() {
+  const resCarousel = await instance.get('/carousels')
+  const carousels = resCarousel.data
+
+  const resCategory = await instance.get('/categories')
+  const categories = resCategory.data
+
+  const resBenefit = await instance.get('/benefits')
+  const benefits = resBenefit.data
+
+  const resBanner = await instance.get('/banners')
+  const banners = resBanner.data
+
+  return {
+    props: {
+      carousels,
+      categories,
+      benefits,
+      banners
+    },
+    revalidate: 2
+  }
+}
+
+export default Home
