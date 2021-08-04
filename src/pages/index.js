@@ -9,7 +9,7 @@ import { BannerPromo } from "../components/Home/BannerPromo";
 import { instance } from '../config';
 
 function Home({ carousels, categories, benefits, banners }) {
-  
+
   useEffect(() => {
     localStorage.setItem('categories', JSON.stringify(categories));
   }, [categories]);
@@ -33,10 +33,10 @@ export async function getStaticProps() {
   const resCarousel = await instance.get('/carousels')
   const carousels = resCarousel.data
 
-  const resCategory = await instance.get('/categories')
+  const resCategory = await instance.get('/categories?_sort=slug:asc')
   const categories = resCategory.data
 
-  const resBenefit = await instance.get('/benefits')
+  const resBenefit = await instance.get('/benefits?_sort=id:asc')
   const benefits = resBenefit.data
 
   const resBanner = await instance.get('/banners')

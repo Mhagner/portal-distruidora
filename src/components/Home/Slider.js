@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 export function Slider({ timeInterval, items }) {
+   
     const indicators = items.map((item, index) => {
         return (
             <li key={index}

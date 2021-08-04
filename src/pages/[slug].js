@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import { getCategoryBySlug, getAllCategoriesSlug } from '../utils/categories'
 import { Breadcrumb } from '../components/Breadcrumb'
 import { ProcessTopBar } from "../components/ProcessTopBar"
@@ -9,20 +10,26 @@ import { GalleryCategory } from '../components/GalleryCategory';
 import { NextSeo } from 'next-seo'
 
 export default function Categories({ category }) {
-    const { categoryName, brands, banner, photos } = category
-    const [image] = banner
+    /* const { brands, banner, photos, categoryName } = category */
+    const router = useRouter()
+
+    if(router.isFallback) {
+        return <h1>Aguarde ...</h1>
+    }
+
+    const [image] = category.banner
 
     return (
         <>
             <NextSeo
-                title={categoryName}
-                description={categoryName}
+                title={category.categoryName}
+                description={category.categoryName}
             />
             <ProcessTopBar />
-            <Breadcrumb pageName={categoryName} />
+            <Breadcrumb pageName={category.categoryName} />
             <div className="container">
                 <TitlePage
-                    descriptionSpan={categoryName}
+                    descriptionSpan={category.categoryName}
                 />
                 <Infocard
                     backgroundImage={image.url}
@@ -34,10 +41,10 @@ export default function Categories({ category }) {
                     shelfClassLogo="shelf-logo-class"
                     dotListClassLogo="dot-shelf-logo"
                     itemClassLogo="item-class-logo"
-                    collectionLogos={brands}
+                    collectionLogos={category.brands}
                 />
                 <GalleryCategory
-                    photos={photos}
+                    photos={category.photos}
                 />
             </div>
         </>
@@ -45,18 +52,18 @@ export default function Categories({ category }) {
 }
 
 export async function getStaticPaths() {
-    const res = await instance.get('/categories');
+    const res = await instance.get('/categories?_sort=id:asc');
     const categories = res.data;
     const paths = getAllCategoriesSlug(categories)
 
     return {
         paths,
-        fallback: false
+        fallback: true
     }
 }
 
 export async function getStaticProps({ params }) {
-    const res = await instance.get('/categories');
+    const res = await instance.get('/categories?_sort=id:asc');
     const categories = res.data;
     const category = getCategoryBySlug(categories, params.slug)
 
@@ -64,6 +71,6 @@ export async function getStaticProps({ params }) {
         props: {
             category
         },
-        revalidate: 5
+        revalidate: 2
     }
 }

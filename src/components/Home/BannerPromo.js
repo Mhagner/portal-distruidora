@@ -8,13 +8,14 @@ export function BannerPromo({
                 <div className="container-infocard">
                     {banners.map((banner) => {
                         const [item] = banner.Image
-                        console.log(banner.width)
+                        
                         return (
                             <div key={banner.id} style={{
                                 backgroundImage: `url(${item.url})`,
                                 backgroundRepeat: "no-repeat",
                                 width: banner.width,
-                                height: banner.height
+                                height: banner.height,
+                                marginBottom: "48px"
                             }}>
                             </div>
                         )
