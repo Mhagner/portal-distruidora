@@ -42,7 +42,7 @@ export const benefits = [
         icon: "img/icon-1.png",
         alt: "Delivery",
         title: "Delivery",
-        description: "Entregamos o seu pedido em sua residência"
+        description: "Entregamos o seu teste em sua residência"
     },
     {
         icon: "img/icon-2.png",
