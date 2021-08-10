@@ -10,47 +10,54 @@ import { instance } from '../config';
 
 function Home({ carousels, categories, benefits, banners }) {
 
-  useEffect(() => {
-    localStorage.setItem('categories', JSON.stringify(categories));
-  }, [categories]);
+    useEffect(() => {
+        localStorage.setItem('categories', JSON.stringify(categories));
+    }, []);
 
-  return (
-   <>
-      <NextSeo
-        title="Home"
-        description="A Portal Distribuidora iniciou suas atividades em 2007 com o intuito de atender as demandas da construção civil de materiais elétricos e iluminação na região de Goiânia - GO."
-      />
-      <ProcessTopBar />
-      <Slider items={carousels} timeInterval="5000" />
-      <Benefits benefits={benefits} />
-      <ContentCategory categories={categories} />
-      <BannerPromo banners={banners} />
-   </>
-  )
+    return ( <
+        >
+        <
+        NextSeo title = "Home"
+        description = "A Portal Distribuidora iniciou suas atividades em 2007 com o intuito de atender as demandas da construção civil de materiais elétricos e iluminação na região de Goiânia - GO." /
+        >
+        <
+        ProcessTopBar / >
+        <
+        Slider items = { carousels }
+        timeInterval = "5000" / >
+        <
+        Benefits benefits = { benefits }
+        /> <
+        ContentCategory categories = { categories }
+        /> <
+        BannerPromo banners = { banners }
+        /> <
+        />
+    )
 }
 
 export async function getStaticProps() {
-  const resCarousel = await instance.get('/carousels')
-  const carousels = resCarousel.data
+    const resCarousel = await instance.get('/carousels')
+    const carousels = resCarousel.data
 
-  const resCategory = await instance.get('/categories?_sort=slug:asc')
-  const categories = resCategory.data
+    const resCategory = await instance.get('/categories?_sort=slug:asc')
+    const categories = resCategory.data
 
-  const resBenefit = await instance.get('/benefits?_sort=id:asc')
-  const benefits = resBenefit.data
+    const resBenefit = await instance.get('/benefits?_sort=id:asc')
+    const benefits = resBenefit.data
 
-  const resBanner = await instance.get('/banners')
-  const banners = resBanner.data
+    const resBanner = await instance.get('/banners')
+    const banners = resBanner.data
 
-  return {
-    props: {
-      carousels,
-      categories,
-      benefits,
-      banners
-    },
-    revalidate: 2
-  }
+    return {
+        props: {
+            carousels,
+            categories,
+            benefits,
+            banners
+        },
+        revalidate: 2
+    }
 }
 
 export default Home
