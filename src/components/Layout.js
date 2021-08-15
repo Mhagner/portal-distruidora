@@ -11,13 +11,12 @@ export function Layout({ children }) {
 
     const router = useRouter()
 
-    const isLadingPage = router.asPath === '/ladingpage'
-
+    const isLandingPage = router.asPath === '/landingpage'
 
     return (
         <>
             <ProcessTopBar />
-            {!isLadingPage && <Header/>}
+            {!isLandingPage && <Header/>}
             <WhatsAppWidget
                 phoneNumber="5562995010927"
                 companyName="Portal Distribuidora"
@@ -26,7 +25,7 @@ export function Layout({ children }) {
                 sendButton="Enviar mensagem"
             />
             {children}
-            {!isLadingPage && <Footer />}
+            {!isLandingPage && <Footer />}
         </>
     )
 }
