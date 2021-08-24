@@ -18,7 +18,7 @@ export function Layout({ children }) {
             <ProcessTopBar />
             {!isLandingPage && <Header/>}
             <WhatsAppWidget
-                phoneNumber="5562995010927"
+                phoneNumber="556232907222"
                 companyName="Portal Distribuidora"
                 textReplyTime="Atendimento Comercial"
                 message='Olá, Em que posso te ajudar?'
