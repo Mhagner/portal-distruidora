@@ -5,7 +5,7 @@ export function HeaderTop() {
                 <div className="ht-left">
                     <div className="mail-service">
                         <i className=" fa fa-envelope" />
-                    atendimento@portaldistribuidora.com.br
+                    contato@portaldistribuidora.com.br
                     </div>
                     <div className="phone-service">
                         <i className=" fa fa-phone" />
@@ -13,13 +13,13 @@ export function HeaderTop() {
                     </div>
                     <div className="phone-service">
                         <i className=" fa fa-whatsapp" />
-                     (62) 99501-0927
+                     (62) 3290-7222
                     </div>
                 </div>
                 <div className="ht-right">
                     <div className="top-social">
-                        <a href="#"><i className="ti-facebook" /></a>
-                        <a href="#"><i className="ti-instagram" /></a>
+                        <a href="https://pt-br.facebook.com/portaldistribuidora/"><i className="ti-facebook" /></a>
+                        <a href="https://www.instagram.com/distribuidoraportal/"><i className="ti-instagram" /></a>
                        {/*  <a href="#"><i className="ti-youtube" /></a>
                         <a href="#"><i className="ti-twitter-alt" /></a> */}
                        {/*  <a href="#"><i className="ti-linkedin" /></a>
