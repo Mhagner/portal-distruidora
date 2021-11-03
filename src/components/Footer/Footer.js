@@ -21,8 +21,8 @@ export function Footer() {
                                 <li>Av. Ville Qd 26 Lt 34 N° 1983 - Residencial Center Ville, Goiânia - GO</li>
                                 <li>CEP: 74369-023</li>
                                 <li>Telefone: (62) 3290-7222</li>
-                                <li>Whatsapp: (62) 99501-0927</li>
-                                <li>E-mail: comercial@portaldistribuidora.com.br</li>
+                                <li>Whatsapp: (62) 3290-7222</li>
+                                <li>E-mail: contato@portaldistribuidora.com.br</li>
                             </ul>
                            <FooterSocial />
                         </div>
